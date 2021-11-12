@@ -10,4 +10,4 @@ _`D`_`1` `:= ` _`D`_`(`_`C`_`0,`_`C`_`1) > std? 0b10: 0b00`
 _`D`_`2` `:= ` _`D`_`(`_`C`_`0,`_`C`_`2) > std? 0b01: 0b00`  
 
 Result reaction from the current cell _`q`_`0` is estimated in the following way,  
-_`q`_`0 =`_`D`_`1|`_`D`_`2`
+_`q`_`0 :=`_`D`_`1|`_`D`_`2 = 0,1,2 or 3`.  
