@@ -10,7 +10,7 @@ A difference between two cells _`Di`_ using a standard value _`std`_ is as follo
 _`D`_`1` `:= ` _`D`_`(`_`C`_`0,`_`C`_`1) > `_`std`_`? 0b10: 0b00`  
 _`D`_`2` `:= ` _`D`_`(`_`C`_`0,`_`C`_`2) > `_`std`_`? 0b01: 0b00`  
 
-Result reaction from the current cell _`q`_`0` is estimated in the following way,  
+Result reaction from the current cell _`q`_`0` is estimated bitwise OR,  
 _`q`_`0 :=`_`D`_`1|`_`D`_`2 = 0,1,2 or 3`.  
 
 ### Paths when _`q`_`= 0 = 0b00`
