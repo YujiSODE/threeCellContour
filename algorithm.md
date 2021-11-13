@@ -3,7 +3,6 @@
 Tool to extract contour from a image.
 
 ### Paths and a cell
-
     [C0 C1]
     [C2 --]
 Let the current cell be as `C0`, and other cells be `C1` and `C2` in 2x2 px area.  
@@ -32,3 +31,8 @@ _`q`_`0 :=`_`D`_`1|`_`D`_`2 = 0,1,2 or 3`.
     [1 -]   [.. --]
     
 ### Packing rule
+    [0101 ...1]    _|_|_|_| ... _|
+    [1010 ...0] => _|_|_|_| ... _|
+     :       :     :            : 
+    [0101 ...1]    _|_|_|_| ... _|
+    
