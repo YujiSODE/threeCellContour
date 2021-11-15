@@ -6,6 +6,7 @@ GitHub: https://github.com/YujiSODE/threeCellContour
 >See LICENSE or http://opensource.org/licenses/mit-license.php  
 ______
 ## [Algorithm](algorithm.md)
+This algorithm returns a definition of contour paths.
 
 ## Scripts
 ### JavaScript
