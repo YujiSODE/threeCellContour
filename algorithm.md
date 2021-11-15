@@ -1,6 +1,8 @@
 # threeCellContour
-## Algorithm
 Tool to extract contour from a image.
+
+## Algorithm
+This algorithm returns a definition of contour paths.
 
 ### Paths and a cell
     [C0 C1]
