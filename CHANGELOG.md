@@ -2,6 +2,10 @@
 ## [Unreleased]
 
 ## [0.1] - 2021-11-22
+## Fixed
+- [`index.html`] line 175:  
+  >` 				ScanB.addEventListener('click',()=>{`
+
 ## Changed
 - [`index.html`] line 63: changed button name from `Scan` to `Stroke`
 
