@@ -3,6 +3,7 @@
 
 ## [0.1] - 2021-11-22
 ## Added
+- [`index.html`] line 108: added a link to GitHub (`https://github.com/YujiSODE/threeCellContour`)
 - [`index.html`] lines 64 and 124: added `Fill` button
 - [`index.html`] lines 182-187: added event listener for fill method
 - [`threeCellContour.js`] lines 15, 19 and 21-26: added descriptions
