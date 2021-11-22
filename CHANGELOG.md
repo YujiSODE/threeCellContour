@@ -7,6 +7,7 @@
   >` 				ScanB.addEventListener('click',()=>{`
 
 ## Changed
+- [`index.html`] line 179: changed log output by `Stroke` (= `Scan`) can also include `type:stroke`
 - [`index.html`] line 63: changed button name from `Scan` to `Stroke`
 
 ## Added
