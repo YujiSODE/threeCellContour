@@ -2,6 +2,9 @@
 ## [Unreleased]
 
 ## [0.1] - 2021-11-22
+## Changed
+- [`index.html`] line 63: changed button name from `Scan` to `Stroke`
+
 ## Added
 - [`index.html`] line 108: added a link to GitHub (`https://github.com/YujiSODE/threeCellContour`)
 - [`index.html`] lines 64 and 124: added `Fill` button
