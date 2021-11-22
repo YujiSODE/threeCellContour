@@ -60,7 +60,8 @@
 				<!-- buttons to change form position -->
 				<button id='leftB' type='button'>Left</button>
 				<button id='rightB' type='button'>Right</button>
-				<button id='scanB' type='button'>Scan</button>
+				<button id='scanB' type='button'>Stroke</button>
+				<button id='fillB' type='button'>Fill</button>
 				<button id='linkB' type='button'>Generate download link</button>
 				<button id='commentB' type='button'>Add comment</button>
 			</div>
@@ -104,6 +105,7 @@
 		</div>
 		<footer>
 			<p>Copyright (c) 2021 Yuji SODE</p>
+			<a href='https://github.com/YujiSODE/threeCellContour'>GitHub</a>
 		</footer>
 		<div style='position:relative;'><canvas id='threeCellContourCvs' width=100 height=100></canvas></div>
 		<img id='imgForCvs' src='#' style='display:none;'>
@@ -119,6 +121,7 @@
 					LeftB=slf.document.getElementById('leftB'),
 					RightB=slf.document.getElementById('rightB'),
 					ScanB=slf.document.getElementById('scanB'),
+					FillB=slf.document.getElementById('fillB'),
 					LinkB=slf.document.getElementById('linkB'),
 					CommentB=slf.document.getElementById('commentB'),
 					SelectB=slf.document.getElementById('selectB'),
@@ -169,11 +172,18 @@
 					slf.document.getElementById('formDiv').className='divRight';
 				},false);
 				//
-				scanB.addEventListener('click',()=>{
+				ScanB.addEventListener('click',()=>{
 					threeCellContour.getContour('threeCellContourCvs',Std.value,Color.value,StrokeWidth.value);
 					//
 					//to add scan log
-					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},stroke:${StrokeWidth.value},target:${Width.value}x${Height.value}`;
+					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},stroke:${StrokeWidth.value},target:${Width.value}x${Height.value},type:stroke`;
+				},false);
+				//
+				FillB.addEventListener('click',()=>{
+					threeCellContour.getFill('threeCellContourCvs',Std.value,Color.value);
+					//
+					//to add scan log
+					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},target:${Width.value}x${Height.value},type:fill`;
 				},false);
 				//
 				LinkB.addEventListener('click',()=>{

@@ -12,10 +12,18 @@
 */
 //Tool to extract contour from a image
 /*
+* [to contour] 
 * - `threeCellContour.getContour(srcCanvasId,standard);`
 * - `threeCellContour.getContour(srcCanvasId,standard,color);`
 * - `threeCellContour.getContour(srcCanvasId,standard,color,strokeWidth);`
+* ------------------------------------------------------------------
 *
+* [to fill] 
+* - `threeCellContour.getFill(srcCanvasId,standard,color);`
+* - `threeCellContour.getFill(srcCanvasId,standard);`
+* ------------------------------------------------------------------
+*
+* [parameters] 
 * 	- `srcCanvasId`: id of target canvas element to scan
 * 	- `standard`: a standard value, which is in the range of [0.0,1.0]
 * 	- `color`: an optional rgba color that is expressed in css hexadecimal notation ("#RRGGBBAA" or "#RGBA"), and "#000f" is default
@@ -205,6 +213,162 @@ threeCellContour.getContour=async (srcCanvasId,standard,color,strokeWidth)=>{
 		ctx.stroke();
 		//---------
 		LOG=slf=outputId=outputCanvas=ctx=n=i=getXY=c0c1=c0c2=PATH=null;
+		//
+	}),2000);
+};
+//
+//method to fill the contoured area
+threeCellContour.getFill=async (srcCanvasId,standard,color)=>{
+	//threeCellContour.getContourFill=async (srcCanvasId,standard,color)=>{
+	// - srcCanvasId: id of target canvas element to scan
+	// - standard: a standard value, which is in the range of [0.0,1.0]
+	// - color: an optional rgba color that is expressed in css hexadecimal notation ("#RRGGBBAA" or "#RGBA"), and "#000f" is default
+	//===
+	let LOG=await threeCellContour(srcCanvasId,standard),
+		slf=window,
+		outputId=`${srcCanvasId}_OUTPUT`,
+		outputCanvas=slf.document.getElementById(outputId),
+		ctx={},n=0,i=0,j=0,
+		log01='',regEx=/[01]/g,filled=[],L=0,
+		/* Run-length encoding (RLE) */
+		RLE=()=>{},
+		X0=0,Y0=0,
+		arrRLE=[],arrRLE_N=0,fillLength=0;
+	//
+	color=!color?'#000f':color;
+	//
+	if(!outputCanvas){
+		outputCanvas=slf.document.createElement('canvas');
+		outputCanvas.id=outputId;
+		slf.document.getElementById(srcCanvasId).parentNode.appendChild(outputCanvas);
+	}
+	//
+	setTimeout(()=>Promise.resolve(LOG).then((v)=>{
+		ctx=outputCanvas.getContext('2d');
+		outputCanvas.width=+v.width;
+		outputCanvas.height=+v.height;
+		//
+		ctx.fillStyle=color;
+		//
+								//n=v.log.length;
+		//
+		//Run-length encoding (RLE)
+		//returned array: `[l0,l1, ... ,ln] = [length_0,length_1,length_0, ..., length_b]`, and `b` is 0 or 1
+		//Lengths: length_0 := `00 ...` and length_1 := `11 ...`
+		RLE=(txt)=>{
+			// - txt: string that is composed of 0 or 1
+			//order: 0 is first
+			let l=txt.length,output=[],v0=0,v=0,n=0,i=0;
+			//
+			while(i<l){
+				//
+				if(txt[i]!=v0){
+					output.push(n);
+					v0=+!v0;
+					//
+					//reset count
+					n=1;
+					//
+					//when !(i != l-1)
+					v=i>l-2?output.push(n):0;
+				}else{
+					//when !(txt[i] != v0)
+					n+=1;
+					//
+					//when !(i != l-1)
+					v=i>l-2?output.push(n):0;
+				}
+				//
+				i+=1;
+			}
+			//
+			l=v0=v=n=i=null;
+			//
+			return output;
+		};
+		/*
+		* --------
+		* [c0|c1]
+		* [c2|--]
+		*
+		* delta1 := d(c0,c1) = 0bB0, delta2 := d(c0,c2) = 0b0B and B = 0 or 1,
+		* then q := delta1|delta2
+		* q = 0,1,2 or 3
+		* --------
+		*/
+		//
+		//0b00 or 0b01 -> 0 then 0b10 or 0b11 -> 1
+		log01=v.log.replaceAll(/[01]/g,0);
+		log01=log01.replaceAll(/[23]/g,1);
+		//
+		i=0;
+		n=v.log.length;
+		while(i<n){
+			filled.push(log01.slice(i,i+v.width));
+			i+=v.width;
+		}
+		//
+		L=filled.length;
+		//
+		//if v.width is not less than 3
+		i=v.width-2;
+		i=i<1?0:i;
+		//
+		//to fill: '10 ... 01' -> '11 ... 11'
+		while(i>0){
+			regEx=new RegExp(`1${'0'.repeat(i)}1`,'g');
+			//
+			j=0;
+			while(j<L){
+				filled[j]=filled[j].replaceAll(regEx,`1${'1'.repeat(i)}1`);
+				j+=1;
+			}
+			//
+			i+=-1;
+		}
+		//
+		//====== to fill the area ======
+		i=0,j=0;
+		//
+		//
+		X0=0,Y0=0,
+			arrRLE=filled.map(RLE),
+			arrRLE_N=arrRLE.length,fillLength=0;
+		//
+		while(i<arrRLE_N){
+			//
+			fillLength=arrRLE[i].length;
+			j=0,X0=0,Y0=i;
+			while(j<fillLength){
+				//
+				//`00 ... 0` := arrRLE[i][j] and `11 ... 1` := arrRLE[i][j+1]
+				X0+=arrRLE[i][j];
+				//
+				//when RLE data ends in `[... length_0,length_1]`
+				// --- all possible patterns are `0101 ... 01` or `0101 ... 10` ---
+				if(!!arrRLE[i][j+1]){
+					/*
+					* `011110` means `__|***|_`
+					*
+					* `0,  1, 1, 1,  1, 0`
+					* `_, _|, *, *, *|, _`
+					*/
+					ctx.rect(X0+1,Y0,arrRLE[i][j+1]-1,1);
+					//
+					X0+=arrRLE[i][j+1];
+				}
+				//
+				j+=2;
+			}
+			//
+			i+=1;
+		}
+		//
+		//---------
+		ctx.fill();
+		//---------
+		//
+		LOG=slf=outputId=outputCanvas=ctx=n=i=j=log01=regEx=filled=L=RLE=X0=Y0=arrRLE=arrRLE_N=fillLength=null;
 		//
 	}),2000);
 };
