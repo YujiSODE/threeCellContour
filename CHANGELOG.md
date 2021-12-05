@@ -1,6 +1,8 @@
 # Change Log 
 ## [Unreleased]
 
+## Released: [0.0] - 2021-12-05
+
 ## [0.1] - 2021-11-22
 ## Fixed
 - [`index.html`] line 175:  
