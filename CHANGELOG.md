@@ -1,6 +1,13 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.2] - 2021-12-23
+## Removed
+- [`threeCellContour.js`] lines 252 and 253:  
+
+  >        		//
+  >        								//n=v.log.length;
+
 ## Released: [0.1] - 2021-12-05
 
 ## Released: [0.0] - 2021-12-05
