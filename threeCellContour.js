@@ -250,8 +250,6 @@ threeCellContour.getFill=async (srcCanvasId,standard,color)=>{
 		//
 		ctx.fillStyle=color;
 		//
-								//n=v.log.length;
-		//
 		//Run-length encoding (RLE)
 		//returned array: `[l0,l1, ... ,ln] = [length_0,length_1,length_0, ..., length_b]`, and `b` is 0 or 1
 		//Lengths: length_0 := `00 ...` and length_1 := `11 ...`
