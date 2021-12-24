@@ -370,4 +370,3 @@ threeCellContour.getFill=async (srcCanvasId,standard,color)=>{
 		//
 	}),2000);
 };
-//===================================================================
