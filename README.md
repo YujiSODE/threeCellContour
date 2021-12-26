@@ -11,4 +11,6 @@ This algorithm returns a definition of contour paths.
 ## Scripts
 ### JavaScript
 - [`threeCellContour.js`](threeCellContour.js): main script
+
+### HTML
 - [`index.html`](index.html): GUI
