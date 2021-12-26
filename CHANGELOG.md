@@ -3,6 +3,12 @@
 
 ## [0.2] - 2021-12-26
 ## Added
+- [`index.html`] lines 70-73: to add tool to extract hull contour  
+>        				<!-- -->
+>        				<button id='scan_hullB' type='button'>Stroke_hull</button>
+>        				<button id='fill_hullB' type='button'>Fill_hull</button>
+>        				<!-- download and comment -->
+
 - [`index.html`] lines 66 and 67: to add tool to extract hull contour  
 >        				<br>
 >        				<!-- stroke and fill -->
