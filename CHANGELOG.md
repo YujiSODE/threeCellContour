@@ -3,6 +3,24 @@
 
 ## [0.2] - 2021-12-26
 ## Added
+- [`index.html`] lines 204-218: to add tool to extract hull contour  
+>        				//
+>        				ScanHullB.addEventListener('click',()=>{
+>        					threeCellContour.getContour_hull('threeCellContourCvs',Std.value,Color.value,StrokeWidth.value);
+>        					//
+>        					//to add scan log
+>        					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},stroke:${StrokeWidth.value},target:${Width.value}x${Height.value},type:stroke_hull`;
+>        				},false);
+>        				//
+>        				FillHullB.addEventListener('click',()=>{
+>        					threeCellContour.getFill_hull('threeCellContourCvs',Std.value,Color.value);
+>        					//
+>        					//to add scan log
+>        					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},target:${Width.value}x${Height.value},type:fill_hull`;
+>        				},false);
+>        				//
+>        				//--- download and comment ---
+
 - [`index.html`] lines 180 and 181: to add tool to extract hull contour  
 >        				//
 >        				//--- stroke and fill ---
