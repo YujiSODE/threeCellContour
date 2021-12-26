@@ -3,11 +3,14 @@
 
 ## [0.2] - 2021-12-26
 ## Added
+- [`index.html`] lines 66 and 67: to add tool to extract hull contour  
+>        				<br>
+>        				<!-- stroke and fill -->
+
 - [`index.html`] lines 52-54: to add tool to extract hull contour  
-  
-        		<!-- -->
-        		<script type='text/javascript' src='polygonalHull.js'></script>
-        		<script type='text/javascript' src='threeCellContour_hull.js'></script>
+>        		<!-- -->
+>        		<script type='text/javascript' src='polygonalHull.js'></script>
+>        		<script type='text/javascript' src='threeCellContour_hull.js'></script>
 
 - [`threeCellContour_hull.js`]: Tool to extract hull contour from a image.
 - [`polygonalHull.js`]: additional Array method to estimate a convex hull with polygonal approximation. this algorithm does not require sorting sample in advance.
