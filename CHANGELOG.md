@@ -1,6 +1,11 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.2] - 2021-12-26
+## Added
+- [`threeCellContour_hull.js`]: Tool to extract hull contour from a image.
+- [`polygonalHull.js`]: additional Array method to estimate a convex hull with polygonal approximation. this algorithm does not require sorting sample in advance.
+
 ## [0.2] - 2021-12-24
 ## Removed
 - [`threeCellContour.js`] line 373: `//===================================================================`
