@@ -49,6 +49,9 @@
 			}
 		</style>
 		<script type='text/javascript' src='threeCellContour.js'></script>
+		<!-- -->
+		<script type='text/javascript' src='polygonalHull.js'></script>
+		<script type='text/javascript' src='threeCellContour_hull.js'></script>
 	</head>
 	<body>
 		<div>
@@ -60,8 +63,14 @@
 				<!-- buttons to change form position -->
 				<button id='leftB' type='button'>Left</button>
 				<button id='rightB' type='button'>Right</button>
+				<br>
+				<!-- stroke and fill -->
 				<button id='scanB' type='button'>Stroke</button>
 				<button id='fillB' type='button'>Fill</button>
+				<!-- -->
+				<button id='scan_hullB' type='button'>Stroke_hull</button>
+				<button id='fill_hullB' type='button'>Fill_hull</button>
+				<!-- download and comment -->
 				<button id='linkB' type='button'>Generate download link</button>
 				<button id='commentB' type='button'>Add comment</button>
 			</div>
@@ -122,6 +131,10 @@
 					RightB=slf.document.getElementById('rightB'),
 					ScanB=slf.document.getElementById('scanB'),
 					FillB=slf.document.getElementById('fillB'),
+					/* --- */
+					ScanHullB=slf.document.getElementById('scan_hullB'),
+					FillHullB=slf.document.getElementById('fill_hullB'),
+					/* --- */
 					LinkB=slf.document.getElementById('linkB'),
 					CommentB=slf.document.getElementById('commentB'),
 					SelectB=slf.document.getElementById('selectB'),
@@ -164,6 +177,8 @@
 				},false);
 				//
 				//### button event ###
+				//
+				//--- stroke and fill ---
 				LeftB.addEventListener('click',()=>{
 					slf.document.getElementById('formDiv').className='divLeft';
 				},false);
@@ -186,6 +201,21 @@
 					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},target:${Width.value}x${Height.value},type:fill`;
 				},false);
 				//
+				ScanHullB.addEventListener('click',()=>{
+					threeCellContour.getContour_hull('threeCellContourCvs',Std.value,Color.value,StrokeWidth.value);
+					//
+					//to add scan log
+					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},stroke:${StrokeWidth.value},target:${Width.value}x${Height.value},type:stroke_hull`;
+				},false);
+				//
+				FillHullB.addEventListener('click',()=>{
+					threeCellContour.getFill_hull('threeCellContourCvs',Std.value,Color.value);
+					//
+					//to add scan log
+					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},target:${Width.value}x${Height.value},type:fill_hull`;
+				},false);
+				//
+				//--- download and comment ---
 				LinkB.addEventListener('click',()=>{
 					let outputCvs=slf.document.getElementById('threeCellContourCvs_OUTPUT'),url;
 					if(!!outputCvs){
