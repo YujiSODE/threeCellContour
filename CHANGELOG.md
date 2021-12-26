@@ -3,6 +3,22 @@
 
 ## [0.2] - 2021-12-26
 ## Added
+- [`README.md`] lines 15:  
+```
+- [`threeCellContour_hull.js`](threeCellContour_hull.js) (`v0.2+`): tool to extract hull contour from a image.
+```
+
+- [`README.md`] line 14:  
+```
+ - [`polygonalHull.js`](polygonalHull.js) (`v0.2+`): additional Array method to estimate a convex hull with polygonal approximation.
+```
+
+- [`README.md`] lines 14 and 15:  
+```
+
+### HTML
+```
+
 - [`index.html`] lines 204-218: to add tool to extract hull contour  
 ```
 				ScanHullB.addEventListener('click',()=>{
