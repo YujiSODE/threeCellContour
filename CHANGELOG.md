@@ -1,6 +1,71 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.2] - 2021-12-26
+## Added
+- [`README.md`] lines 15:  
+```
+- [`threeCellContour_hull.js`](threeCellContour_hull.js) (`v0.2+`): tool to extract hull contour from a image.
+```
+
+- [`README.md`] line 14:  
+```
+ - [`polygonalHull.js`](polygonalHull.js) (`v0.2+`): additional Array method to estimate a convex hull with polygonal approximation.
+```
+
+- [`README.md`] lines 14 and 15:  
+```
+
+### HTML
+```
+
+- [`index.html`] lines 204-218: to add tool to extract hull contour  
+```
+				ScanHullB.addEventListener('click',()=>{
+					threeCellContour.getContour_hull('threeCellContourCvs',Std.value,Color.value,StrokeWidth.value);
+					//
+					//to add scan log
+					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},stroke:${StrokeWidth.value},target:${Width.value}x${Height.value},type:stroke_hull`;
+				},false);
+				//
+				FillHullB.addEventListener('click',()=>{
+					threeCellContour.getFill_hull('threeCellContourCvs',Std.value,Color.value);
+					//
+					//to add scan log
+					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},target:${Width.value}x${Height.value},type:fill_hull`;
+				},false);
+				//
+				//--- download and comment ---
+```
+
+- [`index.html`] lines 180 and 181: to add tool to extract hull contour  
+>    				//
+>   				//--- stroke and fill ---
+
+- [`index.html`] lines 134-137: to add tool to extract hull contour  
+>        					/* --- */
+>        					ScanHullB=slf.document.getElementById('scan_hullB'),
+>        					FillHullB=slf.document.getElementById('fill_hullB'),
+>        					/* --- */
+
+- [`index.html`] lines 70-73: to add tool to extract hull contour  
+>				<!-- -->
+>				<button id='scan_hullB' type='button'>Stroke_hull</button>
+>				<button id='fill_hullB' type='button'>Fill_hull</button>
+>				<!-- download and comment -->
+
+- [`index.html`] lines 66 and 67: to add tool to extract hull contour  
+>    				<br>
+>    				<!-- stroke and fill -->
+
+- [`index.html`] lines 52-54: to add tool to extract hull contour  
+>    		<!-- -->
+>    		<script type='text/javascript' src='polygonalHull.js'></script>
+>    		<script type='text/javascript' src='threeCellContour_hull.js'></script>
+
+- [`threeCellContour_hull.js`]: Tool to extract hull contour from a image.
+- [`polygonalHull.js`]: additional Array method to estimate a convex hull with polygonal approximation. this algorithm does not require sorting sample in advance.
+
 ## [0.2] - 2021-12-24
 ## Removed
 - [`threeCellContour.js`] line 373: `//===================================================================`
