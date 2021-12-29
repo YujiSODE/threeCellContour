@@ -40,7 +40,7 @@ _`q`_`0 :=`_`D`_`1|`_`D`_`2 = 0,1,2 or 3`.
     [0101 ...1]    _|_|_|_| ... _|
     
 ___
-## Algorithm in [`polygonalHull.js`](polygonalHull.js)
+## Algorithm in [`polygonalHull.js`](polygonalHull.js) [+v0.2]
 
 ### Polygonal approximation
 ```
