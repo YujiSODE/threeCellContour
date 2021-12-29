@@ -38,3 +38,4 @@ _`q`_`0 :=`_`D`_`1|`_`D`_`2 = 0,1,2 or 3`.
      :       :     :            : 
     [0101 ...1]    _|_|_|_| ... _|
     
+## Algorithm in [`polygonalHull.js`](polygonalHull.js)
