@@ -1,6 +1,19 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.3] - 2021-12-29
+## Fixed
+- [`README.md`] lines 14 and 15:
+  ```
+  - [`polygonalHull.js`](polygonalHull.js) [v0.2+]: additional Array method to estimate a convex hull with polygonal approximation.
+  - [`threeCellContour_hull.js`](threeCellContour_hull.js) [v0.2+]: tool to extract hull contour from a image.
+  ```
+  
+- [`algorithm.md`] line 52:  
+  ```
+  Let _**`pi`**_ and _**`O`**_ be vector _`Pi`_`-`_`O`_ and vector _`P`_`0 -`_`O`_.  
+  ```
+
 ## Released: [0.2] - 2021-12-29
 ## [0.2] - 2021-12-29
 ## Added
