@@ -1,6 +1,7 @@
 # Change Log 
 ## [Unreleased]
 
+## Released: [0.2] - 2021-12-29
 ## [0.2] - 2021-12-29
 ## Added
 - [`algorithm.md`] lines 42-58: added Algorithm in [`polygonalHull.js`]
