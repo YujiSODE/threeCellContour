@@ -16,3 +16,6 @@ This algorithm returns a definition of contour paths.
 
 ### HTML
 - [`index.html`](index.html): GUI
+
+## Compatibility
+- Firefox `95.0.1+` (64-bit)
