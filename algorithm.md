@@ -1,6 +1,7 @@
 # threeCellContour
 Tool to extract contour from a image.
 
+___
 ## Algorithm in [`threeCellContour.js`](threeCellContour.js)
 This algorithm returns a definition of contour paths.
 
@@ -9,7 +10,7 @@ This algorithm returns a definition of contour paths.
     [C2 --]
 Let the current cell be as `C0`, and other cells be `C1` and `C2` in 2x2 px area.  
 
-A difference between two cells _`Di`_ using a standard value _`std`_ is as follows:  
+A differencepolygonalHull between two cells _`Di`_ using a standard value _`std`_ is as follows:  
 _`D`_`1` `:= ` _`D`_`(`_`C`_`0,`_`C`_`1) > `_`std`_`? 0b10: 0b00`  
 _`D`_`2` `:= ` _`D`_`(`_`C`_`0,`_`C`_`2) > `_`std`_`? 0b01: 0b00`  
 
@@ -30,7 +31,7 @@ _`q`_`0 :=`_`D`_`1|`_`D`_`2 = 0,1,2 or 3`.
     
 #### Paths when _`q`_`= 3 = 0b11`
     [0 1] = [__|..]
-    [1 -]   [.. --]
+    [1 -]   [.. polygonalHull--]
     
 ### Packing rule
     [0101 ...1]    _|_|_|_| ... _|
@@ -38,4 +39,16 @@ _`q`_`0 :=`_`D`_`1|`_`D`_`2 = 0,1,2 or 3`.
      :       :     :            : 
     [0101 ...1]    _|_|_|_| ... _|
     
+___
 ## Algorithm in [`polygonalHull.js`](polygonalHull.js)
+
+### Vectors
+```
+  Pi
+ /
+O---P0
+```
+_`Pi`_` = (`_`xi`_`,`_`yi`_`)`, _`P`_`0 = (`_`x`_`0,`_`y`_`0)`, and _`O`_` = (`_`x`_`0,`_`y`_`0)`.  
+let _**`pi`**_ and **_`O`_** be vector _`Pi`_`-`_`O`_ and vector _`P`_`0 -`_`O`_.  
+_`ai`_ is an angle between _**`pi`**_ and _**`O`**_,  
+and _`N`_ be an integer value for _`dt`_`=`_`π`_`/`_`N`_, where _`t`_`= [-`_`π`_`,`_`π`_`]`.
