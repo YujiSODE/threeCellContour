@@ -1,7 +1,7 @@
 # threeCellContour
 Tool to extract contour from a image.
 
-## Algorithm
+## Algorithm in [`threeCellContour.js`](threeCellContour.js)
 This algorithm returns a definition of contour paths.
 
 ### Paths and a cell
