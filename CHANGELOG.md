@@ -1,6 +1,13 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.3] - 2021-12-29
+## Fixed
+- [`algorithm.md`] line 52:  
+ ```
+ Let _**`pi`**_ and _**`O`**_ be vector _`Pi`_`-`_`O`_ and vector _`P`_`0 -`_`O`_.  
+ ```
+
 ## Released: [0.2] - 2021-12-29
 ## [0.2] - 2021-12-29
 ## Added
