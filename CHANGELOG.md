@@ -1,6 +1,15 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.2] - 2021-12-29
+## Added
+- [`README.md`] lines 19-21:  
+  ```
+  
+  ## Compatibility
+  - Firefox `95.0.1+` (64-bit)
+  ```
+
 ## [0.2] - 2021-12-26
 ## Added
 - [`README.md`] lines 15:  
