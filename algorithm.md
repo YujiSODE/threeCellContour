@@ -10,7 +10,7 @@ This algorithm returns a definition of contour paths.
     [C2 --]
 Let the current cell be as `C0`, and other cells be `C1` and `C2` in 2x2 px area.  
 
-A differencepolygonalHull between two cells _`Di`_ using a standard value _`std`_ is as follows:  
+A difference between two cells _`Di`_ using a standard value _`std`_ is as follows:  
 _`D`_`1` `:= ` _`D`_`(`_`C`_`0,`_`C`_`1) > `_`std`_`? 0b10: 0b00`  
 _`D`_`2` `:= ` _`D`_`(`_`C`_`0,`_`C`_`2) > `_`std`_`? 0b01: 0b00`  
 
