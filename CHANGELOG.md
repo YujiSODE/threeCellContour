@@ -1,6 +1,13 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.3] - 2021-12-30
+## Fixed
+- [`algorithm.md`] line 54:  
+  ```
+   and _`N`_ is an integer value for _`dt`_`=`_`π`_`/`_`N`_, where _`t`_`= [-`_`π`_`,`_`π`_`]`.
+  ```
+
 ## [0.3] - 2021-12-29
 ## Fixed
 - [`README.md`] lines 14 and 15:
