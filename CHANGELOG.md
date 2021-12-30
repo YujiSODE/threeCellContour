@@ -3,6 +3,18 @@
 
 ## [0.3] - 2021-12-30
 ## Changed
+- [`threeCellContour_hull.js`] line 39:  
+  ```
+  threeCellContour.getContour_hull=async (srcCanvasId,standard,vN,color,strokeWidth)=>{
+  ```
+
+## Added
+- [`threeCellContour_hull.js`] line 30:  
+  ```
+  * 	- `vN`: a number of vertices is not greater than 2*vN+1
+  ```
+
+## Changed
 - [`threeCellContour_hull.js`] lines 23 and 24:  
   ```
   * - `threeCellContour.getFill_hull(srcCanvasId,standard,vN,color);`
