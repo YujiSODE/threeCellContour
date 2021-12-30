@@ -2,6 +2,19 @@
 ## [Unreleased]
 
 ## [0.3] - 2021-12-30
+## Changed
+- [`threeCellContour_hull.js`] lines 23 and 24:  
+  ```
+  * - `threeCellContour.getFill_hull(srcCanvasId,standard,vN,color);`
+  * - `threeCellContour.getFill_hull(srcCanvasId,standard,vN);`
+  ```
+- [`threeCellContour_hull.js`] lines 17-19:  
+  ```
+  * - `threeCellContour.getContour_hull(srcCanvasId,standard,vN);`
+  * - `threeCellContour.getContour_hull(srcCanvasId,standard,vN,color);`
+  * - `threeCellContour.getContour_hull(srcCanvasId,standard,vN,color,strokeWidth);`
+  ```
+
 ## Fixed
 - [`index.html`] lines 20-22: added to updated CSS
 - [`index.html`] lines 45-49: removed second `canvas{...}` to updated CSS
