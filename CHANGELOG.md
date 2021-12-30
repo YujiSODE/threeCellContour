@@ -3,6 +3,8 @@
 
 ## [0.3] - 2021-12-30
 ## Fixed
+- [`index.html`] lines 20-22: added to updated CSS
+- [`index.html`] lines 45-49: removed second `canvas{...}` to updated CSS
 - [`algorithm.md`] line 54:  
   ```
    and _`N`_ is an integer value for _`dt`_`=`_`π`_`/`_`N`_, where _`t`_`= [-`_`π`_`,`_`π`_`]`.
