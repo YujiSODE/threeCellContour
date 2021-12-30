@@ -2,6 +2,17 @@
 ## [Unreleased]
 
 ## [0.3] - 2021-12-30
+## Added
+- [`threeCellContour_hull.js`] line 152:  
+  ```
+   	vN=vN<1?1:vN;
+  ```
+
+- [`threeCellContour_hull.js`] line 140:  
+  ```
+   	// - vN: a number of vertices is not greater than 2*vN+1
+  ```
+
 ## Changed
 - [`threeCellContour_hull.js`] line 136:  
   ```
