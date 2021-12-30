@@ -2,8 +2,20 @@
 ## [Unreleased]
 
 ## [0.3] - 2021-12-30
-## Added
+## Changed
+- [`threeCellContour_hull.js`] line 136:  
+  ```
+   threeCellContour.getFill_hull=async (srcCanvasId,standard,vN,color)=>{
+  ```
+- [`threeCellContour_hull.js`] line 102:
+  ```
+   		hull=xyArr.polygonalHull(vN).radSort();
+  ```
 
+## Removed
+- [`threeCellContour_hull.js`] lines 98-101
+
+## Added
 - [`threeCellContour_hull.js`] line 55:  
   ```
    	vN=vN<1?1:vN;
