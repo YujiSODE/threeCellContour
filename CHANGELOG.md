@@ -2,6 +2,14 @@
 ## [Unreleased]
 
 ## [0.3] - 2021-12-30
+## Added
+- [`index.html`] lines 99 and 100:  
+  ```
+  
+						<!-- polygonal approximation -->
+						<div><label>Vertices&#8804;2*<i>N</i>+1<br><i>N</i>: <input type='number' id='inputN_vertices' value=36 min=1 step=1 required></label></div>
+  ```
+
 ## Changed
 - [`threeCellContour_hull.js`] line 196:  
   ```
