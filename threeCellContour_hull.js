@@ -14,19 +14,20 @@
 //Tool to extract hull contour from a image
 /*
 * [to hull contour] 
-* - `threeCellContour.getContour_hull(srcCanvasId,standard);`
-* - `threeCellContour.getContour_hull(srcCanvasId,standard,color);`
-* - `threeCellContour.getContour_hull(srcCanvasId,standard,color,strokeWidth);`
+* - `threeCellContour.getContour_hull(srcCanvasId,standard,vN);`
+* - `threeCellContour.getContour_hull(srcCanvasId,standard,vN,color);`
+* - `threeCellContour.getContour_hull(srcCanvasId,standard,vN,color,strokeWidth);`
 * ------------------------------------------------------------------
 *
 * [to fill] 
-* - `threeCellContour.getFill_hull(srcCanvasId,standard,color);`
-* - `threeCellContour.getFill_hull(srcCanvasId,standard);`
+* - `threeCellContour.getFill_hull(srcCanvasId,standard,vN,color);`
+* - `threeCellContour.getFill_hull(srcCanvasId,standard,vN);`
 * ------------------------------------------------------------------
 *
 * [parameters] 
 * 	- `srcCanvasId`: id of target canvas element to scan
 * 	- `standard`: a standard value, which is in the range of [0.0,1.0]
+* 	- `vN`: a number of vertices is not greater than 2*vN+1
 * 	- `color`: an optional rgba color that is expressed in css hexadecimal notation ("#RRGGBBAA" or "#RGBA"), and "#000f" is default
 * 	- `strokeWidth`: an optional width for stroke that is more than 0.0, and 1.0 is default
 */
@@ -35,9 +36,10 @@
 //`threeCellContour(srcCanvasId,standard)` returns object: {srcId: target canvas id, width: target canvas width, height: target canvas height, log: scan log}
 //
 //method to draw estimated hull of contour
-threeCellContour.getContour_hull=async (srcCanvasId,standard,color,strokeWidth)=>{
+threeCellContour.getContour_hull=async (srcCanvasId,standard,vN,color,strokeWidth)=>{
 	// - srcCanvasId: id of target canvas element to scan
 	// - standard: a standard value, which is in the range of [0.0,1.0]
+	// - vN: a number of vertices is not greater than 2*vN+1
 	// - color: an optional rgba color that is expressed in css hexadecimal notation ("#RRGGBBAA" or "#RGBA"), and "#000f" is default
 	// - strokeWidth: an optional width for stroke that is more than 0.0, and 1.0 is default
 	//===
@@ -50,6 +52,7 @@ threeCellContour.getContour_hull=async (srcCanvasId,standard,color,strokeWidth)=
 		/* --------------------------- */
 		getXY=()=>{};
 	//
+	vN=vN<1?1:vN;
 	color=!color?'#000f':color;
 	strokeWidth=!strokeWidth?1.0:strokeWidth;
 	strokeWidth=+strokeWidth>0?+strokeWidth:1.0;
@@ -95,12 +98,8 @@ threeCellContour.getContour_hull=async (srcCanvasId,standard,color,strokeWidth)=
 			i+=1;
 		}
 		//
-		//################################
-		var N_hull=36;
-		//################################
-		//
 		//it estimates hull
-		hull=xyArr.polygonalHull(N_hull).radSort();
+		hull=xyArr.polygonalHull(vN).radSort();
 		//
 		//---------
 		ctx.beginPath();
@@ -134,10 +133,11 @@ threeCellContour.getContour_hull=async (srcCanvasId,standard,color,strokeWidth)=
 };
 //
 //method to fill area of estimated hull
-threeCellContour.getFill_hull=async (srcCanvasId,standard,color)=>{
+threeCellContour.getFill_hull=async (srcCanvasId,standard,vN,color)=>{
 	//threeCellContour.getContourFill=async (srcCanvasId,standard,color)=>{
 	// - srcCanvasId: id of target canvas element to scan
 	// - standard: a standard value, which is in the range of [0.0,1.0]
+	// - vN: a number of vertices is not greater than 2*vN+1
 	// - color: an optional rgba color that is expressed in css hexadecimal notation ("#RRGGBBAA" or "#RGBA"), and "#000f" is default
 	//===
 	let LOG=await threeCellContour(srcCanvasId,standard),
@@ -149,6 +149,7 @@ threeCellContour.getFill_hull=async (srcCanvasId,standard,color)=>{
 		/* --------------------------- */
 		getXY=()=>{};
 	//
+	vN=vN<1?1:vN;
 	color=!color?'#000f':color;
 	//
 	if(!outputCanvas){
@@ -191,12 +192,8 @@ threeCellContour.getFill_hull=async (srcCanvasId,standard,color)=>{
 			i+=1;
 		}
 		//
-		//################################
-		var N_hull=36;
-		//################################
-		//
 		//it estimates hull
-		hull=xyArr.polygonalHull(N_hull).radSort();
+		hull=xyArr.polygonalHull(vN).radSort();
 		//
 		//---------
 		ctx.beginPath();

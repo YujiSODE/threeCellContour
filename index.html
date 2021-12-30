@@ -96,6 +96,8 @@
 						<div><label>Color<input type='color' id='inputColor' value='#000' required></label></div>
 						<!-- stroke width -->
 						<div><label>Stroke width<input type='number' id='inputStrWidth' value=1.0 min=0.06 step=0.02 required></label></div>
+						<!-- polygonal approximation -->
+						<div><label>Vertices&#8804;2*<i>N</i>+1<br><i>N</i>: <input type='number' id='inputN_vertices' value=36 min=1 step=1 required></label></div>
 					</details>
 				</fieldset>
 				<!-- log -->
@@ -145,7 +147,8 @@
 					Height=slf.document.getElementById('inputHeight'),
 					Std=slf.document.getElementById('standardValue'),
 					Color=slf.document.getElementById('inputColor'),
-					StrokeWidth=slf.document.getElementById('inputStrWidth');
+					StrokeWidth=slf.document.getElementById('inputStrWidth'),
+					VerticesN=slf.document.getElementById('inputN_vertices');
 				//
 				//### file reader event ###
 				_IMG.addEventListener('load',()=>{
@@ -200,17 +203,17 @@
 				},false);
 				//
 				ScanHullB.addEventListener('click',()=>{
-					threeCellContour.getContour_hull('threeCellContourCvs',Std.value,Color.value,StrokeWidth.value);
+					threeCellContour.getContour_hull('threeCellContourCvs',Std.value,VerticesN.value,Color.value,StrokeWidth.value);
 					//
 					//to add scan log
-					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},stroke:${StrokeWidth.value},target:${Width.value}x${Height.value},type:stroke_hull`;
+					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},stroke:${StrokeWidth.value},target:${Width.value}x${Height.value},type:stroke_hull,maxVertices:${2*VerticesN.value+1}`;
 				},false);
 				//
 				FillHullB.addEventListener('click',()=>{
-					threeCellContour.getFill_hull('threeCellContourCvs',Std.value,Color.value);
+					threeCellContour.getFill_hull('threeCellContourCvs',Std.value,VerticesN.value,Color.value);
 					//
 					//to add scan log
-					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},target:${Width.value}x${Height.value},type:fill_hull`;
+					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},target:${Width.value}x${Height.value},type:fill_hull,maxVertices:${2*VerticesN.value+1}`;
 				},false);
 				//
 				//--- download and comment ---

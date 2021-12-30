@@ -2,6 +2,107 @@
 ## [Unreleased]
 
 ## [0.3] - 2021-12-30
+## Changed
+- [`index.html`] line 216:  
+  ```
+   					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},target:${Width.value}x${Height.value},type:fill_hull,maxVertices:${2*VerticesN.value+1}`;
+  ```
+- [`index.html`] line 213:  
+  ```
+   					threeCellContour.getFill_hull('threeCellContourCvs',Std.value,VerticesN.value,Color.value);
+  ```
+- [`index.html`] line 209:  
+  ```
+   					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},stroke:${StrokeWidth.value},target:${Width.value}x${Height.value},type:stroke_hull,maxVertices:${2*VerticesN.value+1}`;
+  ```
+- [`index.html`] line 206:  
+  ```
+   					threeCellContour.getContour_hull('threeCellContourCvs',Std.value,VerticesN.value,Color.value,StrokeWidth.value);
+  ```
+- [`index.html`] lines 150 and 151:  
+  ```  
+					StrokeWidth=slf.document.getElementById('inputStrWidth'),
+					VerticesN=slf.document.getElementById('inputN_vertices');
+  ```
+
+## Added
+- [`index.html`] lines 99 and 100:  
+  ```
+  
+						<!-- polygonal approximation -->
+						<div><label>Vertices&#8804;2*<i>N</i>+1<br><i>N</i>: <input type='number' id='inputN_vertices' value=36 min=1 step=1 required></label></div>
+  ```
+
+## Changed
+- [`threeCellContour_hull.js`] line 196:  
+  ```
+   		hull=xyArr.polygonalHull(vN).radSort();
+  ```
+
+
+## Removed
+- [`threeCellContour_hull.js`] lines 194-197
+
+## Added
+- [`threeCellContour_hull.js`] line 152:  
+  ```
+   	vN=vN<1?1:vN;
+  ```
+
+- [`threeCellContour_hull.js`] line 140:  
+  ```
+   	// - vN: a number of vertices is not greater than 2*vN+1
+  ```
+
+## Changed
+- [`threeCellContour_hull.js`] line 136:  
+  ```
+   threeCellContour.getFill_hull=async (srcCanvasId,standard,vN,color)=>{
+  ```
+- [`threeCellContour_hull.js`] line 102:
+  ```
+   		hull=xyArr.polygonalHull(vN).radSort();
+  ```
+
+## Removed
+- [`threeCellContour_hull.js`] lines 98-101
+
+## Added
+- [`threeCellContour_hull.js`] line 55:  
+  ```
+   	vN=vN<1?1:vN;
+  ```
+
+- [`threeCellContour_hull.js`] line 42:  
+  ```
+   	// - vN: a number of vertices is not greater than 2*vN+1
+  ```
+
+## Changed
+- [`threeCellContour_hull.js`] line 39:  
+  ```
+  threeCellContour.getContour_hull=async (srcCanvasId,standard,vN,color,strokeWidth)=>{
+  ```
+
+## Added
+- [`threeCellContour_hull.js`] line 30:  
+  ```
+  * 	- `vN`: a number of vertices is not greater than 2*vN+1
+  ```
+
+## Changed
+- [`threeCellContour_hull.js`] lines 23 and 24:  
+  ```
+  * - `threeCellContour.getFill_hull(srcCanvasId,standard,vN,color);`
+  * - `threeCellContour.getFill_hull(srcCanvasId,standard,vN);`
+  ```
+- [`threeCellContour_hull.js`] lines 17-19:  
+  ```
+  * - `threeCellContour.getContour_hull(srcCanvasId,standard,vN);`
+  * - `threeCellContour.getContour_hull(srcCanvasId,standard,vN,color);`
+  * - `threeCellContour.getContour_hull(srcCanvasId,standard,vN,color,strokeWidth);`
+  ```
+
 ## Fixed
 - [`index.html`] lines 20-22: added to updated CSS
 - [`index.html`] lines 45-49: removed second `canvas{...}` to updated CSS
