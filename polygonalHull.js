@@ -161,7 +161,7 @@ Array.prototype.polygonalHull=function(N){
 		vOP=setVector(xMid,arr0[i],yMid,arr0[i+1]);
 		T=Math.atan2(vOP[1],vOP[0])/pi_n;
 		//
-		T=Math.floor(T);
+		T=Math.floor(T+0);
 		//
 		norm2=Norm2(vOP);
 		//
