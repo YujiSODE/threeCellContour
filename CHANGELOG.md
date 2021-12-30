@@ -1,6 +1,13 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.3] - 2021-12-31
+## Fixed
+- [`polygonalHull.js`] line 164:  
+  ```
+   		T=Math.floor(T+0);
+  ```
+
 ## [0.3] - 2021-12-30
 ## Changed
 - [`index.html`] line 216:  
