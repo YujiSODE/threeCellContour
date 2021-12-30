@@ -2,6 +2,16 @@
 ## [Unreleased]
 
 ## [0.3] - 2021-12-30
+## Changed
+- [`threeCellContour_hull.js`] line 196:  
+  ```
+   		hull=xyArr.polygonalHull(vN).radSort();
+  ```
+
+
+## Removed
+- [`threeCellContour_hull.js`] lines 194-197
+
 ## Added
 - [`threeCellContour_hull.js`] line 152:  
   ```
