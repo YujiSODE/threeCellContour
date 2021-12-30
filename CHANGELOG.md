@@ -2,6 +2,29 @@
 ## [Unreleased]
 
 ## [0.3] - 2021-12-30
+## Changed
+- [`index.html`] line 216:  
+  ```
+   					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},target:${Width.value}x${Height.value},type:fill_hull,maxVertices:${2*VerticesN.value+1}`;
+  ```
+- [`index.html`] line 213:  
+  ```
+   					threeCellContour.getFill_hull('threeCellContourCvs',Std.value,VerticesN.value,Color.value);
+  ```
+- [`index.html`] line 209:  
+  ```
+   					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},stroke:${StrokeWidth.value},target:${Width.value}x${Height.value},type:stroke_hull,maxVertices:${2*VerticesN.value+1}`;
+  ```
+- [`index.html`] line 206:  
+  ```
+   					threeCellContour.getContour_hull('threeCellContourCvs',Std.value,VerticesN.value,Color.value,StrokeWidth.value);
+  ```
+- [`index.html`] lines 150 and 151:  
+  ```  
+					StrokeWidth=slf.document.getElementById('inputStrWidth'),
+					VerticesN=slf.document.getElementById('inputN_vertices');
+  ```
+
 ## Added
 - [`index.html`] lines 99 and 100:  
   ```
