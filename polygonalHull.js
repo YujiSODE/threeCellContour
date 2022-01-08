@@ -122,6 +122,7 @@ Array.prototype.polygonalHull=function(N){
 		X=[],Y=[],
 		xMin=0.0,xMax=0.0,yMin=0.0,yMax=0.0,
 		xMid=0.0,yMid=0.0,vOP=[],
+		norm2List=[],l2Avg3=0.0,
 		/* --- functions --- */
 		setVector=()=>{},
 		Norm2=()=>{};
@@ -192,9 +193,12 @@ Array.prototype.polygonalHull=function(N){
 		//
 		i+=2;
 	}
+	//
+	norm2List=Object.values(tList).reduce((e1,e2)=>{let E=e1.push(e2[2]);E=null;return e1;},[]);
+	l2Avg3=(Math.min(...norm2List)+Math.max(...norm2List))*0.3;
 	//--------------------------------------------------------------------
 	//
-	arr0=n0=i=pi_n=T=norm2=X=Y=xMin=xMax=yMin=yMax=xMid=0.0,yMid=vOP=setVector=Norm2=null;
+	arr0=n0=i=pi_n=T=norm2=X=Y=xMin=xMax=yMin=yMax=xMid=yMid=vOP=norm2List=setVector=Norm2=null;
 	//
-	return Object.values(tList).reduce((e1,e2)=>{let E=e1.push(e2[0],e2[1]);E=null;return e1;},[]);
+	return Object.values(tList).reduce((e1,e2)=>{let E=e2[2]<l2Avg3?0:e1.push(e2[0],e2[1]);E=null;return e1;},[]);
 };
