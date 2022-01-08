@@ -2,6 +2,20 @@
 ## [Unreleased]
 
 ## [0.3] - 2021-12-31
+## Added
+
+- [`polygonalHull.js`] lines 196-198:
+  ```
+	//
+	norm2List=Object.values(tList).reduce((e1,e2)=>{let E=e1.push(e2[2]);E=null;return e1;},[]);
+	l2Avg3=(Math.min(...norm2List)+Math.max(...norm2List))*0.3;
+  ```
+- [`polygonalHull.js`] line 125:
+  ```
+   		norm2List=[],l2Avg3=0.0,
+  ```
+
+## [0.3] - 2021-12-31
 ## Fixed
 - [`polygonalHull.js`] line 164:  
   ```
