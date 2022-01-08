@@ -1,7 +1,7 @@
 # Change Log 
 ## [Unreleased]
 
-## [0.3] - 2021-12-31
+## [0.3] - 2022-01-08
 ## Changed
 - [`polygonalHull.js`] line 203:
   ```
