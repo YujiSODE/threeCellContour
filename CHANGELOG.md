@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 ## [0.3] - 2021-12-31
-## Added
+## Changed
+- [`polygonalHull.js`] line 203:
+  ```
+   	return Object.values(tList).reduce((e1,e2)=>{let E=e2[2]<l2Avg3?0:e1.push(e2[0],e2[1]);E=null;return e1;},[]);
+  ```
+- [`polygonalHull.js`] line 201:
+  ```
+   	arr0=n0=i=pi_n=T=norm2=X=Y=xMin=xMax=yMin=yMax=xMid=yMid=vOP=norm2List=setVector=Norm2=null;
+  ```
 
+## Added
 - [`polygonalHull.js`] lines 196-198:
   ```
 	//
