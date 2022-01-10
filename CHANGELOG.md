@@ -1,6 +1,14 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.3] - 2022-01-10
+## Fixed
+- [`algorithm.md`] lines 51 and 52:  
+  ```
+   _`Pi`_` = (`_`xi`_`,`_`yi`_`)`, _`Po`_` = (`_`c`_`, 0)`, _`O`_` = (`_`xo`_`,`_`yo`_`)` and _`c`_`>`_`xo`_.  
+   Let _**`pi`**_ and _**`O`**_ be vector _`Pi`_`-`_`O`_ and vector _`Po`_`-`_`O`_.  
+  ```
+
 ## [0.3] - 2022-01-08
 ## Changed
 - [`polygonalHull.js`] line 203:
