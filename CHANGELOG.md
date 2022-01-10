@@ -1,6 +1,24 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.3] - 2022-01-10
+## Added
+- [`algorithm.md`] lines 58-62:  
+  ```
+  _**`T`**_`= (`_`T`_`0, ...,`_`Tj`_`) = (`_`x`_`0`,_`y`_`0, ...,`_`xj`_`,`_`yj`_`)`.  
+  
+  [+v0.3]  
+  _`L`_`3 = (min(`_**`T`**_`) +max(`_**`T`**_`))*0.3`.  
+  Returned value is comosed of _`Tj`_, that is not less than _`L`_`3`.
+  ```
+
+## Fixed
+- [`algorithm.md`] lines 51 and 52:  
+  ```
+   _`Pi`_` = (`_`xi`_`,`_`yi`_`)`, _`Po`_` = (`_`c`_`, 0)`, _`O`_` = (`_`xo`_`,`_`yo`_`)` and _`c`_`>`_`xo`_.  
+   Let _**`pi`**_ and _**`O`**_ be vector _`Pi`_`-`_`O`_ and vector _`Po`_`-`_`O`_.  
+  ```
+
 ## [0.3] - 2022-01-08
 ## Changed
 - [`polygonalHull.js`] line 203:
