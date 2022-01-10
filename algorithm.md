@@ -55,4 +55,8 @@ and _`N`_ is an integer value for _`dt`_`=`_`π`_`/`_`N`_, where _`t`_`= [-`_`π
 
 Polygonal approximation of convex hull is _**`T`**_.  
 _`Tj`_`= max(|`_**`pj`**_`|)`, where _`j`_`= floor(`_`ai`_`/`_`dt`_`)`.  
-_**`T`**_`= (`_`T`_`0, ...,`_`Tj`_`) = (`_`x`_`0`,_`y`_`0, ...,`_`xj`_`,`_`yj`_`)`.
+_**`T`**_`= (`_`T`_`0, ...,`_`Tj`_`) = (`_`x`_`0`,_`y`_`0, ...,`_`xj`_`,`_`yj`_`)`.  
+
+[+v0.3]  
+_`L`_`3 = (min(`_**`T`**_`) +max(`_**`T`**_`))*0.3`.  
+Returned value is comosed of _`Tj`_, that is not less than _`L`_`3`.
