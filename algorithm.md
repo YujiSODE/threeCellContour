@@ -48,8 +48,8 @@ ___
  /
 O---P0
 ```
-_`Pi`_` = (`_`xi`_`,`_`yi`_`)`, _`P`_`0 = (`_`x`_`0,`_`y`_`0)`, and _`O`_` = (`_`x`_`0,`_`y`_`0)`.  
-Let _**`pi`**_ and _**`O`**_ be vector _`Pi`_`-`_`O`_ and vector _`P`_`0 -`_`O`_.  
+_`Pi`_` = (`_`xi`_`,`_`yi`_`)`, _`Po`_` = (`_`c`_`, 0)`, _`O`_` = (`_`xo`_`,`_`yo`_`)` and _`c`_`>`_`xo`_.  
+Let _**`pi`**_ and _**`O`**_ be vector _`Pi`_`-`_`O`_ and vector _`Po`_`-`_`O`_.  
 _`ai`_ is an angle between _**`pi`**_ and _**`O`**_,  
 and _`N`_ is an integer value for _`dt`_`=`_`π`_`/`_`N`_, where _`t`_`= [-`_`π`_`,`_`π`_`]`.
 
