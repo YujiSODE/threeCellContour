@@ -1,6 +1,14 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.3] - 2022-01-14
+## Fixed
+- [`algorithm.md`] line 51:  
+  ```
+  _`Pi`_` = (`_`xi`_`,`_`yi`_`)`, _`Po`_` = (`_`c`_`,`_`yo`_`)`, _`O`_` = (`_`xo`_`,`_`yo`_`)` and _`c`_`>`_`xo`_.  
+  ```
+- [`algorithm.md`] line 49: ` O---Po`
+
 ## [0.3] - 2022-01-10
 ## Added
 - [`algorithm.md`] lines 58-62:  
