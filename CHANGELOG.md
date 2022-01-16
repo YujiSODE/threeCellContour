@@ -1,6 +1,10 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.3] - 2022-01-16
+## Fixed
+- [`algorithm.md`] line 45: ` ### Polygonal approximation of convex hull`
+
 ## [0.3] - 2022-01-14
 ## Fixed
 - [`algorithm.md`] line 51:  
