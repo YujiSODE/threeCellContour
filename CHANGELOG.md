@@ -2,6 +2,9 @@
 ## [Unreleased]
 
 ## [0.3] - 2022-01-20
+## Added
+- [`3CC_wallClockTime_randomN.js`]: script for computational complexity
+
 ## Fixed
 - [`README.md`] added line 10
 
