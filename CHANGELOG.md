@@ -3,6 +3,16 @@
 
 ## [0.3] - 2022-01-20
 ## Added
+- [`algorithm.md`] lines 69-75:  
+  ```
+  ### Computational complexity
+  - polygonal approximation with `2*`_`N`_`+1` vertices
+  - number of sample set is 36
+  - range of _`N`_ is expressed by minimum, average and maximum
+  - [script](3CC_wallClockTime_randomN.js)
+  
+  ![wallClockTime_randomN_v03_curves.png](wallClockTime_randomN_v03_curves.png)
+  ```
 - [`3CC_wallClockTime_randomN.js`]: script for computational complexity
 
 ## Fixed
