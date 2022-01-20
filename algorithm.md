@@ -66,4 +66,6 @@ _**`T`**_`= (`_`T`_`0, ...,`_`Tj`_`) = (`_`x`_`0`,_`y`_`0, ...,`_`xj`_`,`_`yj`_`
 _`L`_`3 = (min(`_**`T`**_`) +max(`_**`T`**_`))*0.3`.  
 Returned value is comosed of _`Tj`_, that is not less than _`L`_`3`.
 
+### Computational complexity
+![wallClockTime_randomN_v03_curves.png](wallClockTime_randomN_v03_curves.png)
 ___
