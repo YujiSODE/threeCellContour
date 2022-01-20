@@ -70,6 +70,7 @@ Returned value is comosed of _`Tj`_, that is not less than _`L`_`3`.
 - polygonal approximation with `2*`_`N`_`+1` vertices
 - number of sample set is 36
 - range of _`N`_ is expressed by minimum, average and maximum
+- [script](3CC_wallClockTime_randomN.js)
 
 ![wallClockTime_randomN_v03_curves.png](wallClockTime_randomN_v03_curves.png)
 ___
