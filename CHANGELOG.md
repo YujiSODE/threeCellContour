@@ -2,6 +2,9 @@
 ## [Unreleased]
 
 ## [0.3] - 2022-01-20
+## Fixed
+- [`README.md`] added line 10
+
 ## Canged
 - [`README.md`] lines 8 and 9:  
   ```

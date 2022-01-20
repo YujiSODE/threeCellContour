@@ -7,6 +7,7 @@ GitHub: https://github.com/YujiSODE/threeCellContour
 ______
 <!-- ![3CC_sample01_v03_20220109Stroke_Fill.png](3CC_sample01_v03_20220109Stroke_Fill.png) -->
 <img width=800 src='3CC_sample01_v03_20220109Stroke_Fill.png' alt='3CC_sample01_v03_20220109Stroke_Fill.png'>
+
 ## [Algorithm](algorithm.md)
 This algorithm returns a definition of contour paths.
 
