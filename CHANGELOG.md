@@ -1,6 +1,14 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.3] - 2022-01-20
+## Added
+- [`algorithm.md`] lines 6 and 7:  
+  ```
+  
+  **`threeCellContour.js/threeCellContour(srcCanvasId,standard)`**  
+  ```
+
 ## [0.3] - 2022-01-16
 ## Fixed
 - [`algorithm.md`] line 45: ` ### Polygonal approximation of convex hull`
