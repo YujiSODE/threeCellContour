@@ -3,6 +3,11 @@
 
 ## [0.3] - 2022-01-20
 ## Added
+- [`algorithm.md`] lines 68 and 69:  
+  ```
+    
+  ___
+  ```
 - [`algorithm.md`] lines 47-49:  
   ```
   **`polygonalHull.js/Array.prototype.polygonalHull(N)`**  
