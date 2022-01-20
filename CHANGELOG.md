@@ -3,6 +3,11 @@
 
 ## [0.3] - 2022-01-20
 ## Canged
+- [`README.md`] lines 8 and 9:  
+  ```
+  <!-- ![3CC_sample01_v03_20220109Stroke_Fill.png](3CC_sample01_v03_20220109Stroke_Fill.png) -->
+  <img width=800 src='3CC_sample01_v03_20220109Stroke_Fill.png' alt='3CC_sample01_v03_20220109Stroke_Fill.png'>
+  ```
 - [`README.md`] lines 23-27:  
   ```
   
@@ -14,14 +19,7 @@
 
 ## Added
 - [`3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg`] added sample image of polygonal approximation:  
-  ![3CC_sample01_v03 lines 23-27:  
-    ```
-    
-______
-<!-- ![3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg](3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg) -->
-<img width=800 src='3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg' alt='3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg'>
-
-_20220109StrokeHulls_lowQuality.jpg](3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg)
+  ![3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg](3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg)
 - [`3CC_sample01_v03_20220109Stroke_Fill.png`] added contour sample image:  
   ![3CC_sample01_v03_20220109Stroke_Fill.png](3CC_sample01_v03_20220109Stroke_Fill.png)
 - [`wallClockTime_randomN_v03_curves.png`] added a graph of computational complexity at `polygonalHull.js/Array.prototype.polygonalHull(N)`:  
