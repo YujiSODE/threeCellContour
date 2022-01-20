@@ -3,6 +3,8 @@
 
 ## [0.3] - 2022-01-20
 ## Added
+- [`wallClockTime_randomN_v03_curves.png`] added a graph of computational complexity at `polygonalHull.js/Array.prototype.polygonalHull(N)`:  
+  ![wallClockTime_randomN_v03_curves.png](wallClockTime_randomN_v03_curves.png)
 - [`algorithm.md`] lines 68 and 69:  
   ```
     
