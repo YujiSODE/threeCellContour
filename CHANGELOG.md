@@ -3,6 +3,12 @@
 
 ## [0.3] - 2022-01-20
 ## Added
+- [`algorithm.md`] lines 47-49:  
+  ```
+  **`polygonalHull.js/Array.prototype.polygonalHull(N)`**  
+  This algorithm estimates a convex hull with polygonal approximation.
+  
+  ```
 - [`algorithm.md`] lines 6 and 7:  
   ```
   
