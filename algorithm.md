@@ -67,7 +67,7 @@ _`L`_`3 = (min(`_**`T`**_`) +max(`_**`T`**_`))*0.3`.
 Returned value is comosed of _`Tj`_, that is not less than _`L`_`3`.
 
 ### Computational complexity
-- polygonal approximation with `2*`_`N`_`+1 (= 2*5+1)` vertices
+- polygonal approximation with `2*`_`N`_`+1` vertices
 - number of sample set is 36
 - range of _`N`_ is expressed by minimum, average and maximum
 
