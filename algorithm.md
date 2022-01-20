@@ -3,6 +3,8 @@ Tool to extract contour from a image.
 
 ___
 ## Algorithm in [`threeCellContour.js`](threeCellContour.js)
+
+**`threeCellContour.js/threeCellContour(srcCanvasId,standard)`**  
 This algorithm returns a definition of contour paths.
 
 ### Paths and a cell
@@ -42,6 +44,9 @@ _`q`_`0 :=`_`D`_`1|`_`D`_`2 = 0,1,2 or 3`.
 ___
 ## Algorithm in [`polygonalHull.js`](polygonalHull.js) [+v0.2]
 
+**`polygonalHull.js/Array.prototype.polygonalHull(N)`**  
+This algorithm estimates a convex hull with polygonal approximation.
+
 ### Polygonal approximation of convex hull
 ```
   Pi
@@ -60,3 +65,5 @@ _**`T`**_`= (`_`T`_`0, ...,`_`Tj`_`) = (`_`x`_`0`,_`y`_`0, ...,`_`xj`_`,`_`yj`_`
 [+v0.3]  
 _`L`_`3 = (min(`_**`T`**_`) +max(`_**`T`**_`))*0.3`.  
 Returned value is comosed of _`Tj`_, that is not less than _`L`_`3`.
+
+___

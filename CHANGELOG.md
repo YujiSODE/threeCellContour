@@ -1,6 +1,46 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.3] - 2022-01-20
+## Canged
+- [`README.md`] lines 8 and 9:  
+  ```
+  <!-- ![3CC_sample01_v03_20220109Stroke_Fill.png](3CC_sample01_v03_20220109Stroke_Fill.png) -->
+  <img width=800 src='3CC_sample01_v03_20220109Stroke_Fill.png' alt='3CC_sample01_v03_20220109Stroke_Fill.png'>
+  ```
+- [`README.md`] lines 23-27:  
+  ```
+  
+  ______
+  <!-- ![3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg](3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg) -->
+  <img width=800 src='3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg' alt='3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg'>
+  
+  ```
+
+## Added
+- [`3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg`] added sample image of polygonal approximation:  
+  ![3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg](3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg)
+- [`3CC_sample01_v03_20220109Stroke_Fill.png`] added contour sample image:  
+  ![3CC_sample01_v03_20220109Stroke_Fill.png](3CC_sample01_v03_20220109Stroke_Fill.png)
+- [`wallClockTime_randomN_v03_curves.png`] added a graph of computational complexity at `polygonalHull.js/Array.prototype.polygonalHull(N)`:  
+  ![wallClockTime_randomN_v03_curves.png](wallClockTime_randomN_v03_curves.png)
+- [`algorithm.md`] lines 68 and 69:  
+  ```
+    
+  ___
+  ```
+- [`algorithm.md`] lines 47-49:  
+  ```
+  **`polygonalHull.js/Array.prototype.polygonalHull(N)`**  
+  This algorithm estimates a convex hull with polygonal approximation.
+  
+  ```
+- [`algorithm.md`] lines 6 and 7:  
+  ```
+  
+  **`threeCellContour.js/threeCellContour(srcCanvasId,standard)`**  
+  ```
+
 ## [0.3] - 2022-01-16
 ## Fixed
 - [`algorithm.md`] line 45: ` ### Polygonal approximation of convex hull`
