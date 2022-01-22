@@ -1,6 +1,10 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.3] - 2022-01-22
+## Added
+- [`3CC_sample01_v03.js`]: script that draws sample data on canvas element
+
 ## [0.3] - 2022-01-20
 ## Added
 - [`algorithm.md`] lines 69-75:  
