@@ -1,6 +1,7 @@
 # Change Log 
 ## [Unreleased]
 
+## Released: [0.3] - 2022-01-22
 ## [0.3] - 2022-01-22
 ## Added
 - [`3CC_sample01_v03.js`]: script that draws sample data on canvas element
