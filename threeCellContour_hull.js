@@ -20,8 +20,8 @@
 * ------------------------------------------------------------------
 *
 * [to fill] 
-* - `threeCellContour.getFill_hull(srcCanvasId,standard,vN,color);`
 * - `threeCellContour.getFill_hull(srcCanvasId,standard,vN);`
+* - `threeCellContour.getFill_hull(srcCanvasId,standard,vN,color);`
 * ------------------------------------------------------------------
 *
 * [parameters] 

@@ -1,6 +1,10 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.4] - 2022-01-31
+## Changed
+- [`threeCellContour_hull.js`] lines 23 and 24: lines were exchanged
+
 ## Released: [0.3] - 2022-01-22
 ## [0.3] - 2022-01-22
 ## Added
