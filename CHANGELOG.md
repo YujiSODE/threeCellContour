@@ -3,6 +3,7 @@
 
 ## [0.4] - 2022-02-02
 ## Added
+- [`threeCellContour_hull_v04.js`]: new tool to extract hull contour from a image (`v0.4`).
 - [`index_v04.html`]: new interface (`v0.4`)
 - [`clusteredHull.js`]: new Array method to approximate a convex hull with clustering (`v0.4+`)
 
