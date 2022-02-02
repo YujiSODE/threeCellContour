@@ -1,6 +1,25 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.4] - 2022-02-02
+## Added
+- [`README.md`] lines 17, 18 and 25: added `<**Deprecated**>`
+
+## Deprecated
+- [`index.html`]
+- [`threeCellContour_hull.js`]
+- [`polygonalHull.js`]
+
+## Added
+- [`README.md`]: added descriptions on some new scripts with version 0.4 in `## Scripts`
+- [`threeCellContour_hull_v04.js`]: new tool to extract hull contour from a image (`v0.4`).
+- [`index_v04.html`]: new interface (`v0.4`)
+- [`clusteredHull.js`]: new Array method to approximate a convex hull with clustering (`v0.4+`)
+
+## Changed
+- [`index.html`] line 58: added a link to new version (`v0.4`)
+- [`index.html`] lines 3, 16 and 57: added version (`v0.3`)
+
 ## [0.4] - 2022-01-31
 ## Changed
 - [`threeCellContour_hull.js`] lines 23 and 24: lines were exchanged

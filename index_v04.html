@@ -1,6 +1,6 @@
 <!--
 /*threeCellContour
-* index.html [v0.3]
+* index.html [v0.4]
 *===================================================================
 *	Copyright (c) 2021 Yuji SODE <yuji.sode@gmail.com>
 *
@@ -13,7 +13,7 @@
 	<head>
 		<meta charset='utf-8'>
 		<meta name='description' content="GUI for threeCellContour.">
-		<title>threeCellsContour v0.3</title>
+		<title>threeCellsContour v0.4</title>
 		<style type='text/css'>
 			canvas{
 				border:1px solid #000f;
@@ -48,14 +48,14 @@
 		</style>
 		<script type='text/javascript' src='threeCellContour.js'></script>
 		<!-- -->
-		<script type='text/javascript' src='polygonalHull.js'></script>
-		<script type='text/javascript' src='threeCellContour_hull.js'></script>
+		<!-- v0.4 -->
+		<script type='text/javascript' src='clusteredHull.js'></script>
+		<script type='text/javascript' src='threeCellContour_hull_v04.js'></script>
 	</head>
 	<body>
 		<div>
 			<h1>threeCellContour</h1>
-			<p>GUI for threeCellContour (<code>v0.3</code>).</p>
-			<p><a href='index_v04.html'>Try new version (v0.4)</a></p>
+			<p>GUI for threeCellContour (<code>v0.4</code>).</p>
 		</div>
 		<div id='formDiv' class='divRight'>
 			<div id='buttonsDiv'>
@@ -97,8 +97,9 @@
 						<div><label>Color<input type='color' id='inputColor' value='#000' required></label></div>
 						<!-- stroke width -->
 						<div><label>Stroke width<input type='number' id='inputStrWidth' value=1.0 min=0.06 step=0.02 required></label></div>
-						<!-- polygonal approximation -->
-						<div><label>Vertices&#8804;2*<i>N</i>+1<br><i>N</i>: <input type='number' id='inputN_vertices' value=36 min=1 step=1 required></label></div>
+						<!-- clustered approximation -->
+						<div><label><i>dX</i> [px]: <input type='number' id='inputDX_clusterSize' value=100 min=2 step=1 required></label></div>
+						<div><label><i>dY</i> [px]: <input type='number' id='inputDY_clusterSize' value=100 min=2 step=1 required></label></div>
 					</details>
 				</fieldset>
 				<!-- log -->
@@ -149,7 +150,8 @@
 					Std=slf.document.getElementById('standardValue'),
 					Color=slf.document.getElementById('inputColor'),
 					StrokeWidth=slf.document.getElementById('inputStrWidth'),
-					VerticesN=slf.document.getElementById('inputN_vertices');
+					DX_clusterSize=slf.document.getElementById('inputDX_clusterSize'),
+					DY_clusterSize=slf.document.getElementById('inputDY_clusterSize');
 				//
 				//### file reader event ###
 				_IMG.addEventListener('load',()=>{
@@ -204,17 +206,17 @@
 				},false);
 				//
 				ScanHullB.addEventListener('click',()=>{
-					threeCellContour.getContour_hull('threeCellContourCvs',Std.value,VerticesN.value,Color.value,StrokeWidth.value);
+					threeCellContour.getContour_hull('threeCellContourCvs',Std.value,DX_clusterSize.value,DY_clusterSize.value,Color.value,StrokeWidth.value);
 					//
 					//to add scan log
-					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},stroke:${StrokeWidth.value},target:${Width.value}x${Height.value},type:stroke_hull,maxVertices:${2*VerticesN.value+1}`;
+					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},stroke:${StrokeWidth.value},target:${Width.value}x${Height.value},type:stroke_hull,clusterSize:${DX_clusterSize.value}x${DY_clusterSize.value}`;
 				},false);
 				//
 				FillHullB.addEventListener('click',()=>{
-					threeCellContour.getFill_hull('threeCellContourCvs',Std.value,VerticesN.value,Color.value);
+					threeCellContour.getFill_hull('threeCellContourCvs',Std.value,DX_clusterSize.value,DY_clusterSize.value,Color.value);
 					//
 					//to add scan log
-					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},target:${Width.value}x${Height.value},type:fill_hull,maxVertices:${2*VerticesN.value+1}`;
+					log.value+=`${!log.value?'':'\n'}time:${(new Date()).toJSON()},standard:${Std.value},color:${Color.value},target:${Width.value}x${Height.value},type:fill_hull,clusterSize:${DX_clusterSize.value}x${DY_clusterSize.value}`;
 				},false);
 				//
 				//--- download and comment ---
