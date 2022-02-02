@@ -1,6 +1,11 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.4] - 2022-02-02
+## Changed
+- [`index.html`] line 58: added a link to new version (`v0.4`)
+- [`index.html`] lines 3, 16 and 57: added version (`v0.3`)
+
 ## [0.4] - 2022-01-31
 ## Changed
 - [`threeCellContour_hull.js`] lines 23 and 24: lines were exchanged
