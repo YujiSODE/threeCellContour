@@ -2,6 +2,10 @@
 ## [Unreleased]
 
 ## [0.4] - 2022-02-02
+## Added
+- [`index_v04.html`]: new interface (`v0.4`)
+- [`clusteredHull.js`]: new Array method to approximate a convex hull with clustering (`v0.4+`)
+
 ## Changed
 - [`index.html`] line 58: added a link to new version (`v0.4`)
 - [`index.html`] lines 3, 16 and 57: added version (`v0.3`)
