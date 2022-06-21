@@ -2,6 +2,12 @@
 ## [Unreleased]
 
 ## [0.4] - 2022-06-21
+## Changed
+- [`README.md`] lines 34 and 35:  
+  ```  
+    <!-- ![3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg](3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg) -->
+    <!-- <img width=800 src='3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg' alt='3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg'> -->
+  ```
 
 ## Added
 - [`README.md`] lines 36 and 37:  
