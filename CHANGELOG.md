@@ -2,6 +2,16 @@
 ## [Unreleased]
 
 ## [0.4] - 2022-06-21
+## Added
+- [`algorithm.md`] lines 79-82:  
+  ```
+  ### Computational complexity
+  - [script](3CC_wallClockTime_randomN_v04.js)
+  
+  ![wallClockTime_randomN_v04_curves](wallClockTime_randomN_v04_curves.png)
+  ```
+
+## [0.4] - 2022-06-21
 ## Changed
 - [`README.md`] lines 34 and 35:  
   ```  
