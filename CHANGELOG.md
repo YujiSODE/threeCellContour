@@ -9,9 +9,6 @@
   - [`threeCellContour_hull_v04.js`](threeCellContour_hull_v04.js): new tool to extract hull contour from a image.
   ```
 
-## Added
-- [`README.md`] line 13: added `https://github.com/YujiSODE/threeCellContour/blob/main/%5BthreeCellContour_hull_v04.js`
-
 ## [0.4] - 2022-02-02
 ## Added
 - [`README.md`] lines 17, 18 and 25: added `<**Deprecated**>`
