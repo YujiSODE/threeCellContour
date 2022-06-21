@@ -33,4 +33,6 @@ This algorithm returns a definition of contour paths.
 ______
 <!-- ![3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg](3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg) -->
 <img width=800 src='3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg' alt='3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg'>
+<!-- ![SShot_3CC_v04Test20220127_02](SShot_3CC_v04Test20220127_02.png) -->
+<img width=800 src='SShot_3CC_v04Test20220127_02.png' alt='SShot_3CC_v04Test20220127_02'>
 
