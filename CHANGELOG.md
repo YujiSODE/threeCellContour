@@ -3,8 +3,16 @@
 
 ## [0.4] - 2022-06-21
 
+## Added
+- [`algorithm.md`] lines 77-79:  
+  ```
+  ## Algorithm in [`clusteredHull.js`](clusteredHull.js) [+v0.4]
+  
+  ___
+  ```
+
 ## Fixed
-- [`README.md`] line 22: fixed a link: 
+- [`README.md`] line 22: fixed a link:  
   ```
   - [`threeCellContour_hull_v04.js`](threeCellContour_hull_v04.js): new tool to extract hull contour from a image.
   ```
