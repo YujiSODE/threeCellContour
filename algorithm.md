@@ -76,4 +76,8 @@ Returned value is comosed of _`Tj`_, that is not less than _`L`_`3`.
 ___
 ## Algorithm in [`clusteredHull.js`](clusteredHull.js) [+v0.4]
 
+### Computational complexity
+- [script](3CC_wallClockTime_randomN_v04.js)
+
+![wallClockTime_randomN_v04_curves](wallClockTime_randomN_v04_curves.png)
 ___
