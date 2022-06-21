@@ -4,6 +4,7 @@
 ## [0.4] - 2022-06-21
 
 ## Added
+- [`3CC_wallClockTime_randomN_v04.js`]: added script for computational complexity in [v0.4]
 - [`algorithm.md`] lines 77-79:  
   ```
   ## Algorithm in [`clusteredHull.js`](clusteredHull.js) [+v0.4]
