@@ -4,6 +4,7 @@
 ## [0.4] - 2022-06-21
 
 ## Added
+- [`wallClockTime_randomN_v04_curves.png`]: added result graph for computational complexity in [v0.4]
 - [`SShot_3CC_v04Test20220127_02.png`]: added screenshot of [v0.4]
 - [`3CC_wallClockTime_randomN_v04.js`]: added script for computational complexity in [v0.4]
 - [`algorithm.md`] lines 77-79:  
