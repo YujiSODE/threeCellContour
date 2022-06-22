@@ -2,6 +2,9 @@
 ## [Unreleased]
 
 ## [0.4] - 2022-06-22
+## Added
+- [`wallClockTime_randomN_v04.pdf`]: computational complexity in `[v0.4]`
+
 ## Fixed
 - [`clusteredHull.js`] line 136: fixed a comment
 
