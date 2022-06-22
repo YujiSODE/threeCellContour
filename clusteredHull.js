@@ -133,7 +133,7 @@ Array.prototype.clusteredHull=function(dX,dY){
 	dY=!dY?dX:dY;
 	dY=dY>0?+dY:1;
 	//
-	// === sample: X,Y,Xmin,Ymin,Xmax,Ymax,Xmid,Ymid,dX and dY ===
+	// === sample: X,Y,Xmin,Ymin,Xmax,Ymax,Xmid and Ymid ===
 	X=arr0.reduce((e1,e2,idx)=>{let E=idx%2<1?e1.push(e2):e1;E=null;return e1;},[]);
 	Y=arr0.reduce((e1,e2,idx)=>{let E=idx%2<1?e1:e1.push(e2);E=null;return e1;},[]);
 	//
