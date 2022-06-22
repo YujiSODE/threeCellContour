@@ -1,6 +1,14 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.4] - 2022-06-22
+## Added
+- [`algorithm.md`] lines 76, 79-100 and 106: added explanation for the algorithm in `clusteredHull.js` [+v0.4]
+- [`wallClockTime_randomN_v04.pdf`]: computational complexity in `[v0.4]`
+
+## Fixed
+- [`clusteredHull.js`] line 136: fixed a comment
+
 ## [0.4] - 2022-06-21
 ## Added
 - [`algorithm.md`] lines 79-82:  

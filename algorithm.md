@@ -73,11 +73,35 @@ Returned value is comosed of _`Tj`_, that is not less than _`L`_`3`.
 - [script](3CC_wallClockTime_randomN.js)
 
 ![wallClockTime_randomN_v03_curves.png](wallClockTime_randomN_v03_curves.png)
+
 ___
 ## Algorithm in [`clusteredHull.js`](clusteredHull.js) [+v0.4]
+It is important for convex hull estimation to exclude internal points efficiently.  
+Convex hull approximation is composed of following two phases:  
+1. Sample clustfarthestering
+2. In‐cluster processing
+
+### 1. Sample clustering
+A given sample ranges were split into `M x N` clusters.  
+An index which belongs to a cluster `idx` is expressed by function expression as follows:  
+`idx = I(x,y)`, where `idx, x, y ∈ 0, 1, 2, ...`  
+A cluster which is specified with an index is within a convex hull when `x` and `y` satisfy following two conditions:  
+```
+Min(∂I/∂x) < x < Max(∂I/∂x)
+Min(∂I/∂y) < y < Max(∂I/∂y)
+```
+
+### 2. In‐cluster processing
+Each cluster was approximated geometrically by its elements.  
+Each cluster was approximated rectangularly using the minimum and maximum elements in this algorithm.  
+The farthest approximated vertex from the center of sample was determined in each cluster.  
+The determined vertices represent clusters.  
+
+The result of approximation were determined vertices in above two phases.
 
 ### Computational complexity
 - [script](3CC_wallClockTime_randomN_v04.js)
 
 ![wallClockTime_randomN_v04_curves](wallClockTime_randomN_v04_curves.png)
+
 ___
