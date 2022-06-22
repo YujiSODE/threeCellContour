@@ -1,6 +1,10 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.4] - 2022-06-22
+## Fixed
+- [`clusteredHull.js`] line 136: fixed a comment
+
 ## [0.4] - 2022-06-21
 ## Added
 - [`algorithm.md`] lines 79-82:  
