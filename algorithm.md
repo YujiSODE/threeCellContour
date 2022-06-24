@@ -78,7 +78,7 @@ ___
 ## Algorithm in [`clusteredHull.js`](clusteredHull.js) [+v0.4]
 It is important for convex hull estimation to exclude internal points efficiently.  
 Convex hull approximation is composed of following two phases:  
-1. Sample clustfarthestering
+1. Sample clustering
 2. In‐cluster processing
 
 ### 1. Sample clustering

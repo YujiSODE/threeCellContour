@@ -1,6 +1,11 @@
 # Change Log 
 ## [Unreleased]
 
+## Released: [0.4.1] - 2022-06-24
+## [0.4.1] - 2022-06-24
+## Fixed
+- [`algorithm.md`] line 81: `1. Sample clustering`
+
 ## Released: [0.4] - 2022-06-24
 ## [0.4] - 2022-06-24
 ## Fixed
