@@ -1,6 +1,10 @@
 # Change Log 
 ## [Unreleased]
 
+## [0.4] - 2022-06-24
+## Fixed
+- [`wallClockTime_randomN_v04.pdf`]: fixed format
+
 ## [0.4] - 2022-06-22
 ## Added
 - [`algorithm.md`] lines 76, 79-100 and 106: added explanation for the algorithm in `clusteredHull.js` [+v0.4]
