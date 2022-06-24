@@ -1,6 +1,7 @@
 # Change Log 
 ## [Unreleased]
 
+## Released: [0.4] - 2022-06-24
 ## [0.4] - 2022-06-24
 ## Fixed
 - [`wallClockTime_randomN_v04.pdf`]: fixed format
