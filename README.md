@@ -14,8 +14,6 @@ This algorithm returns a definition of contour paths.
 ## Scripts
 ### JavaScript
 - [`threeCellContour.js`](threeCellContour.js): main script
-- <**Deprecated**>[`polygonalHull.js`](polygonalHull.js) [v0.2 to v0.4]: additional Array method to estimate a convex hull with polygonal approximation.
-- <**Deprecated**>[`threeCellContour_hull.js`](threeCellContour_hull.js) [v0.2 to v0.4]: tool to extract hull contour from a image.
 
 **[v0.4+]**
 - [`clusteredHull.js`](clusteredHull.js) [v0.4+]: new Array method to approximate a convex hull with clustering.
