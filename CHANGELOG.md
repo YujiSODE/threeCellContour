@@ -3,6 +3,7 @@
 
 ## [1.0] - 2022-06-27
 ## Removed
+- [`threeCellContour_hull.js`]: removed tool to extract hull contour from a image of [`v0.2-v0.4`]
 - [`polygonalHull.js`]: removed additional Array method to estimate a convex hull with polygonal approximation of [`v0.2-v0.4`]
 - [`index.html`]: removed `index.html` of [`v0.2-v0.4`]
 
@@ -421,7 +422,7 @@
 
 ## [0.2] - 2021-12-23
 ## Removed
-- [`threeCellContour.js`] lines 252 and 253:  
+- [`threeCellContour.js`] lines 252 and 253:  tool to extract hull contour from a image.
 
   >        		//
   >        								//n=v.log.length;
