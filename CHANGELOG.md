@@ -2,6 +2,9 @@
 ## [Unreleased]
 
 ## [1.0] - 2022-06-27
+## Removed
+- [`3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg`]: removed image
+
 ## Changed
 - [`README.md`] line 22:  
   ```
