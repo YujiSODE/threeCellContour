@@ -2,6 +2,16 @@
 ## [Unreleased]
 
 ## [1.0] - 2022-06-27
+## Changed
+- [`README.md`] line 22:  
+  ```
+   - [`index.html`](index.html): GUI
+  ```
+- [`README.md`] line 19:  
+  ```
+   - [`threeCellContour_hull_v04.js`](threeCellContour_hull_v04.js) [v0.4+]: tool to extract hull contour from a image.
+  ```
+
 ## Removed
 - [`README.md`] line 22
 
