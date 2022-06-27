@@ -1,6 +1,34 @@
 # Change Log 
 ## [Unreleased]
 
+## [1.0] - 2022-06-27
+## Removed
+- [`README.md`] lines 8, 30-32 and 34
+
+## Changed
+- [`README.md`] lines 19 and 20: removed keyword `new`
+
+## Removed
+- [`README.md`] line 13
+
+## Changed
+- [`README.md`] line 24:  
+  ```
+   - [`index.html`](index.html) [v0.4+]: GUI
+  ```
+- [`index.html`]: renamed from `index_v04.html` to `index.html`
+- [`README.md`] line 24:  
+  ```
+   - [`index_v04.html`](index_v04.html) [v0.4+]: GUI
+  ```
+
+## Removed
+- [`README.md`] lines 23 and 24
+- [`README.md`] lines 17 and 18
+- [`threeCellContour_hull.js`]: removed tool to extract hull contour from a image of [`v0.2-v0.4`]
+- [`polygonalHull.js`]: removed additional Array method to estimate a convex hull with polygonal approximation of [`v0.2-v0.4`]
+- [`index.html`]: removed `index.html` of [`v0.2-v0.4`]
+
 ## Released: [0.4.1] - 2022-06-24
 ## [0.4.1] - 2022-06-24
 ## Fixed
@@ -416,7 +444,7 @@
 
 ## [0.2] - 2021-12-23
 ## Removed
-- [`threeCellContour.js`] lines 252 and 253:  
+- [`threeCellContour.js`] lines 252 and 253:  tool to extract hull contour from a image.
 
   >        		//
   >        								//n=v.log.length;
