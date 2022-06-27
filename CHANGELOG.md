@@ -3,6 +3,10 @@
 
 ## [1.0] - 2022-06-27
 # Changed
+- [`README.md`] line 24:  
+  ```
+   - [`index.html`](index.html) [v0.4+]: GUI
+  ```
 - [`index.html`]: renamed from `index_v04.html` to `index.html`
 - [`README.md`] line 24:  
   ```
