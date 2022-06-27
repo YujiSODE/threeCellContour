@@ -10,14 +10,14 @@ ______
 
 ## [Algorithm](algorithm.md)
 This algorithm returns a definition of contour paths.
-- [`threeCellContour_hull_v04.js`](threeCellContour_hull_v04.js): new tool to extract hull contour from a image.
+
 ## Scripts
 ### JavaScript
 - [`threeCellContour.js`](threeCellContour.js): main script
 
 **[v0.4+]**
-- [`clusteredHull.js`](clusteredHull.js) [v0.4+]: new Array method to approximate a convex hull with clustering.
-- [`threeCellContour_hull_v04.js`](threeCellContour_hull_v04.js): new tool to extract hull contour from a image.
+- [`clusteredHull.js`](clusteredHull.js) [v0.4+]: Array method to approximate a convex hull with clustering.
+- [`threeCellContour_hull_v04.js`](threeCellContour_hull_v04.js): tool to extract hull contour from a image.
 
 ### HTML
 **[v0.4+]**
