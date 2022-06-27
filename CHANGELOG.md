@@ -3,7 +3,8 @@
 
 ## [1.0] - 2022-06-27
 ## Removed
-- [`index.html`]: removed `index.html` of `[v0.3]`
+- [`polygonalHull.js`]: removed additional Array method to estimate a convex hull with polygonal approximation of [`v0.2-v0.4`]
+- [`index.html`]: removed `index.html` of [`v0.2-v0.4`]
 
 ## Released: [0.4.1] - 2022-06-24
 ## [0.4.1] - 2022-06-24
