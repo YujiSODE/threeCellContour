@@ -2,7 +2,13 @@
 ## [Unreleased]
 
 ## [1.0] - 2022-06-27
-# Changed
+## Changed
+- [`README.md`] lines 19 and 20: removed keyword `new`
+
+## Removed
+- [`README.md`] line 13
+
+## Changed
 - [`README.md`] line 24:  
   ```
    - [`index.html`](index.html) [v0.4+]: GUI
