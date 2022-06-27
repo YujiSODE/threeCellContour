@@ -42,39 +42,6 @@ _`q`_`0 :=`_`D`_`1|`_`D`_`2 = 0,1,2 or 3`.
     [0101 ...1]    _|_|_|_| ... _|
     
 ___
-## Algorithm in [`polygonalHull.js`](polygonalHull.js) [+v0.2]
-
-**`polygonalHull.js/Array.prototype.polygonalHull(N)`**  
-This algorithm estimates a convex hull with polygonal approximation.
-
-### Polygonal approximation of convex hull
-```
-  Pi
- /
-O---Po
-```
-_`Pi`_` = (`_`xi`_`,`_`yi`_`)`, _`Po`_` = (`_`c`_`,`_`yo`_`)`, _`O`_` = (`_`xo`_`,`_`yo`_`)` and _`c`_`>`_`xo`_.  
-Let _**`pi`**_ and _**`O`**_ be vector _`Pi`_`-`_`O`_ and vector _`Po`_`-`_`O`_.  
-_`ai`_ is an angle between _**`pi`**_ and _**`O`**_,  
-and _`N`_ is an integer value for _`dt`_`=`_`π`_`/`_`N`_, where _`t`_`= [-`_`π`_`,`_`π`_`]`.
-
-Polygonal approximation of convex hull is _**`T`**_.  
-_`Tj`_`= max(|`_**`pj`**_`|)`, where _`j`_`= floor(`_`ai`_`/`_`dt`_`)`.  
-_**`T`**_`= (`_`T`_`0, ...,`_`Tj`_`) = (`_`x`_`0`,_`y`_`0, ...,`_`xj`_`,`_`yj`_`)`.  
-
-[+v0.3]  
-_`L`_`3 = (min(`_**`T`**_`) +max(`_**`T`**_`))*0.3`.  
-Returned value is comosed of _`Tj`_, that is not less than _`L`_`3`.
-
-### Computational complexity
-- polygonal approximation with `2*`_`N`_`+1` vertices
-- number of sample set is 36
-- range of _`N`_ is expressed by minimum, average and maximum
-- [script](3CC_wallClockTime_randomN.js)
-
-![wallClockTime_randomN_v03_curves.png](wallClockTime_randomN_v03_curves.png)
-
-___
 ## Algorithm in [`clusteredHull.js`](clusteredHull.js) [+v0.4]
 It is important for convex hull estimation to exclude internal points efficiently.  
 Convex hull approximation is composed of following two phases:  

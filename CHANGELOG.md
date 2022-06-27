@@ -3,6 +3,26 @@
 
 ## [1.0] - 2022-06-27
 ## Removed
+- [`algorithm.md`] lines 44-76: removed deprecated description of polygonal approximation in [v0.2-v0.4]
+- [`wallClockTime_randomN_v03_curves.png`]: removed deprecated image
+- [`3CC_wallClockTime_randomN.js`]: removed deprecated script
+- [`3CC_sample01_v03_20220109StrokeHulls_lowQuality.jpg`]: removed image
+
+## Changed
+- [`README.md`] line 22:  
+  ```
+   - [`index.html`](index.html): GUI
+  ```
+- [`README.md`] line 19:  
+  ```
+   - [`threeCellContour_hull_v04.js`](threeCellContour_hull_v04.js) [v0.4+]: tool to extract hull contour from a image.
+  ```
+
+## Removed
+- [`README.md`] line 22
+
+## [1.0] - 2022-06-27
+## Removed
 - [`README.md`] lines 8, 30-32 and 34
 
 ## Changed

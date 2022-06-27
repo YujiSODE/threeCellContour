@@ -16,11 +16,10 @@ This algorithm returns a definition of contour paths.
 
 **[v0.4+]**
 - [`clusteredHull.js`](clusteredHull.js) [v0.4+]: Array method to approximate a convex hull with clustering.
-- [`threeCellContour_hull_v04.js`](threeCellContour_hull_v04.js): tool to extract hull contour from a image.
+- [`threeCellContour_hull_v04.js`](threeCellContour_hull_v04.js) [v0.4+]: tool to extract hull contour from a image.
 
 ### HTML
-**[v0.4+]**
-- [`index.html`](index.html) [v0.4+]: GUI
+- [`index.html`](index.html): GUI
 
 ## Compatibility
 - Firefox `95.0.1+` (64-bit)
