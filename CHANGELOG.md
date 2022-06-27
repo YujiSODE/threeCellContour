@@ -1,6 +1,10 @@
 # Change Log 
 ## [Unreleased]
 
+## [1.0] - 2022-06-27
+## Removed
+- [`index.html`]: removed `index.html` of `[v0.3]`
+
 ## Released: [0.4.1] - 2022-06-24
 ## [0.4.1] - 2022-06-24
 ## Fixed
