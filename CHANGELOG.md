@@ -5,7 +5,7 @@
 # Changed
 - [`README.md`] line 24:  
   ```
-   - [`index_v04.html`](index_v04.html) [v0.4+]: GUI interface
+   - [`index_v04.html`](index_v04.html) [v0.4+]: GUI
   ```
 
 ## Removed
