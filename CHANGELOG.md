@@ -2,6 +2,9 @@
 ## [Unreleased]
 
 ## [1.0] - 2022-06-27
+## Removed
+- [`README.md`] lines 8, 30-32 and 34
+
 ## Changed
 - [`README.md`] lines 19 and 20: removed keyword `new`
 
