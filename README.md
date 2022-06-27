@@ -20,10 +20,8 @@ This algorithm returns a definition of contour paths.
 - [`threeCellContour_hull_v04.js`](threeCellContour_hull_v04.js): new tool to extract hull contour from a image.
 
 ### HTML
-- <**Deprecated**>[`index.html`](index.html) [v0.3]: GUI
-
 **[v0.4+]**
-- [`index_v04.html`](index_v04.html) [v0.4+]: new interface
+- [`index_v04.html`](index_v04.html) [v0.4+]: GUI interface
 
 ## Compatibility
 - Firefox `95.0.1+` (64-bit)
