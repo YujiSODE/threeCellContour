@@ -1,6 +1,10 @@
 # Change Log 
 ## [Unreleased]
 
+## [1.0] - 2022-06-28
+## Removed
+- [`README.md`] lines 16 and 17
+
 ## [1.0] - 2022-06-27
 ## Removed
 - [`algorithm.md`] lines 44-76: removed deprecated description of polygonal approximation in [v0.2-v0.4]
