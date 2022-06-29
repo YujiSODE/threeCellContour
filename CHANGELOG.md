@@ -1,6 +1,13 @@
 # Change Log 
 ## [Unreleased]
 
+## [1.0] - 2022-06-29
+## Changed
+- [`index.html`] lines 5 and 118: the year of Copyright was changed from ` Copyright (c) 2021 Yuji Sode` to ` Copyright (c) 2021-2022 Yuji Sode`
+- [`README.md`] line 4: the year of Copyright was changed from ` Copyright (c) 2021 Yuji Sode` to ` Copyright (c) 2021-2022 Yuji Sode`
+- [`LICENSE`] line 3: the year of Copyright was changed from ` Copyright (c) 2021 Yuji Sode` to ` Copyright (c) 2021-2022 Yuji Sode`
+- [`index.html`] lines 3, 16 and 58: changed from `v0.4` to `v1.0`
+
 ## [1.0] - 2022-06-28
 ## Removed
 - [`README.md`] lines 16 and 17
