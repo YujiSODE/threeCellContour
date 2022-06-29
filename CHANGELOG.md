@@ -1,6 +1,10 @@
 # Change Log 
 ## [Unreleased]
 
+## [1.0] - 2022-06-29
+## Changed
+- [`index.html`] lines 3, 16 and 58: changed from `v0.4` to `v1.0`
+
 ## [1.0] - 2022-06-28
 ## Removed
 - [`README.md`] lines 16 and 17
