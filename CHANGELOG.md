@@ -1,6 +1,21 @@
 # Change Log 
 ## [Unreleased]
 
+## [1.0] - 2022-06-30
+## Changed
+- [`index.html`] line 57; added logo image:  
+  ```
+   			<h1><img width=160 src='logoIMG/3CC_logo_v1_N3.png' alt='threeCellContour'></h1>
+  ```
+
+## Added
+- [`README.md`] lines 1 and 2:  
+  ```
+  <img width=400 src='logoIMG/3CC_logo_v1_N3.png' alt='logo image'>
+  
+  ```
+- [`logoIMG/3CC_logo_v1_N3.png`]: added a logo image that is designed by Yuji Sode on [2022-06-29]
+
 ## [1.0] - 2022-06-29
 ## Changed
 - [`index.html`] lines 5 and 118: the year of Copyright was changed from ` Copyright (c) 2021 Yuji Sode` to ` Copyright (c) 2021-2022 Yuji Sode`
