@@ -1,3 +1,5 @@
+<img width=400 src='logoIMG/3CC_logo_v1_N3.png' alt='logo image'>
+
 # threeCellContour
 Tool to extract contour from a image.  
 GitHub: https://github.com/YujiSODE/threeCellContour  
