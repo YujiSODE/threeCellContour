@@ -2,6 +2,12 @@
 ## [Unreleased]
 
 ## [1.0] - 2022-06-30
+## Changed
+- [`index.html`] line 57; added logo image:  
+  ```
+   			<h1><img width=160 src='logoIMG/3CC_logo_v1_N3.png' alt='threeCellContour'></h1>
+  ```
+
 ## Added
 - [`README.md`] lines 1 and 2:  
   ```
