@@ -1,6 +1,10 @@
 # Change Log 
 ## [Unreleased]
 
+## [1.0] - 2022-06-30
+## Added
+- [`logoIMG/3CC_logo_v1_N3.png`]: added a logo image that is designed by Yuji Sode on [2022-06-29]
+
 ## [1.0] - 2022-06-29
 ## Changed
 - [`index.html`] lines 5 and 118: the year of Copyright was changed from ` Copyright (c) 2021 Yuji Sode` to ` Copyright (c) 2021-2022 Yuji Sode`
