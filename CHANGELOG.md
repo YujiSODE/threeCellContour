@@ -3,6 +3,11 @@
 
 ## [1.0] - 2022-06-30
 ## Added
+- [`README.md`] lines 1 and 2:  
+  ```
+  <img width=400 src='logoIMG/3CC_logo_v1_N3.png' alt='logo image'>
+  
+  ```
 - [`logoIMG/3CC_logo_v1_N3.png`]: added a logo image that is designed by Yuji Sode on [2022-06-29]
 
 ## [1.0] - 2022-06-29
