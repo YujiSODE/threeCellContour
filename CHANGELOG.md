@@ -1,6 +1,7 @@
 # Change Log 
 ## [Unreleased]
 
+## Released: [1.0 beta] - 2022-06-30
 ## [1.0] - 2022-06-30
 ## Changed
 - [`index.html`] line 57; added logo image:  
