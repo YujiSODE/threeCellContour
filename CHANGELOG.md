@@ -1,6 +1,14 @@
 # Change Log 
 ## [Unreleased]
 
+## [1.0.1] - 2022-07-04
+## Changed
+- [`README.md`] lines 1 amd 2:  
+  ```
+  <!-- logo image of "threeCellContour" -->
+  <h1><img width=400 src='logoIMG/3CC_logo_v1_N3.png' alt='threeCellContour'></h1>
+  ```
+
 ## Released: [1.0 beta] - 2022-06-30
 ## [1.0] - 2022-06-30
 ## Changed

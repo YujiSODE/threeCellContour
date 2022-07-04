@@ -1,6 +1,6 @@
-<img width=400 src='logoIMG/3CC_logo_v1_N3.png' alt='logo image'>
+<!-- logo image of "threeCellContour" -->
+<h1><img width=400 src='logoIMG/3CC_logo_v1_N3.png' alt='threeCellContour'></h1>
 
-# threeCellContour
 Tool to extract contour from a image.  
 GitHub: https://github.com/YujiSODE/threeCellContour  
 >Copyright (c) 2021-2022 Yuji SODE \<yuji.sode@gmail.com\>  
