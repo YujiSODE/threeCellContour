@@ -3,6 +3,10 @@
 
 ## [1.0.1] - 2022-07-05
 ## Added
+- [`README.md`] line 10:  
+  ```
+   <img width=400 src='OUTPUT_3CC20220704-01.png' alt='sample image with animation'>
+  ```
 - [`OUTPUT_3CC20220704-01.png`]: added sample image
 
 ## [1.0.1] - 2022-07-04
