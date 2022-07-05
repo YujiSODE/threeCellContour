@@ -1,6 +1,10 @@
 # Change Log 
 ## [Unreleased]
 
+## [1.0.1] - 2022-07-05
+## Added
+- [`OUTPUT_3CC20220704-01.png`]: added sample image
+
 ## [1.0.1] - 2022-07-04
 ## Changed
 - [`README.md`] lines 1 amd 2:  
