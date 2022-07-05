@@ -1,6 +1,20 @@
 # Change Log 
 ## [Unreleased]
 
+## [1.0.1] - 2022-07-05
+## Removed
+- [`README.md`] line 11:  
+  ```
+   <img width=800 src='3CC_sample01_v03_20220109Stroke_Fill.png' alt='3CC_sample01_v03_20220109Stroke_Fill.png'>
+  ```
+
+## Added
+- [`README.md`] line 10:  
+  ```
+   <img width=400 src='OUTPUT_3CC20220704-01.png' alt='sample image with animation'>
+  ```
+- [`OUTPUT_3CC20220704-01.png`]: added sample image
+
 ## [1.0.1] - 2022-07-04
 ## Changed
 - [`README.md`] lines 1 amd 2:  
