@@ -2,6 +2,12 @@
 ## [Unreleased]
 
 ## [1.0.1] - 2022-07-05
+## Removed
+- [`README.md`] line 11:  
+  ```
+   <img width=800 src='3CC_sample01_v03_20220109Stroke_Fill.png' alt='3CC_sample01_v03_20220109Stroke_Fill.png'>
+  ```
+
 ## Added
 - [`README.md`] line 10:  
   ```
