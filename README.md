@@ -8,7 +8,6 @@ GitHub: https://github.com/YujiSODE/threeCellContour
 >See LICENSE or http://opensource.org/licenses/mit-license.php  
 ______
 <img width=400 src='OUTPUT_3CC20220704-01.png' alt='sample image with animation'>
-<img width=800 src='3CC_sample01_v03_20220109Stroke_Fill.png' alt='3CC_sample01_v03_20220109Stroke_Fill.png'>
 
 ## [Algorithm](algorithm.md)
 This algorithm returns a definition of contour paths.
