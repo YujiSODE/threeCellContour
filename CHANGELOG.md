@@ -1,6 +1,8 @@
 # Change Log 
 ## [Unreleased]
 
+## Released: [1.0.1] - 2022-07-11
+
 ## [1.0.1] - 2022-07-05
 ## Removed
 - [`README.md`] line 11:  
